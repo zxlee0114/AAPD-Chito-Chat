@@ -1,0 +1,26 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import './utils/variables';
+@import './utils/utils-costomized';
+@import "../../node_modules/bootstrap";
+
+//font-family
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+//icon
+@import "../../node_modules/mingcute_icon/font/Mingcute.css";
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+//@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+//base
+@import './base/base';
+
+//customized component
+
+//venders
+
+//layout
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+//pages
+@import './pages/index.scss';
