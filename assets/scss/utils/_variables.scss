@@ -379,7 +379,7 @@ $theme-colors: (
   "primary-lighter":  $primary-300,
 
   "secondary-darker": $secondary-800, //focus
-  "secondary-dark":   $secondary-600,
+  "secondary-dark":   $secondary-600, //btn
   "secondary":        $secondary,
   "secondary-light":  $secondary-200,
 
@@ -391,10 +391,11 @@ $theme-colors: (
   "black":    $neutral-950,
   "gray-900": $neutral-900, //平假名
   "gray-800": $neutral-800,
+  "gray-700": $neutral-700,
   "gray-600": $neutral-600, //opt
   "gray-500": $neutral-500, //片假名
   "gray-400": $neutral-400, //illust tag
-  "gray-300": $neutral-300, //deactiv placeholder
+  "gray-300": $neutral-300, //deactiv placeholder btn
   "gray-200": $neutral-200,
   "gray-100": $neutral-100, 
   "gray-50":  $neutral-50,
@@ -504,7 +505,7 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
-  //section .aapd
+  //aapd spacer
   0: 0,
   tiny: $spacer * .125,   //  2
   xxs:  $spacer * .25,    //  4
@@ -661,7 +662,7 @@ $border-color-translucent:    rgba($black, .175) !default;
 
 // scss-docs-start border-radius-variables
 
-//section .aapd
+//aapd border-radius
 $border-radius-xl:            1.5rem;            
 $border-radius-lg:            1.25rem;            
 $border-radius-md:            1rem;            
@@ -684,7 +685,7 @@ $border-radius-2xl:           $border-radius-xxl !default; // Deprecated in v5.3
 // scss-docs-start box-shadow-variables
 $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
 
-//section .aapd
+//aapd box-shadow
 $box-shadow-sm:               0px 2px 4px 0px #00000014, 0px 0px 6px 0px #00000005;
 //0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow-md:               0px 4px 8px 0px #0000000F, 0px 0px 4px 0px #0000000A;
@@ -757,12 +758,12 @@ $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
-//section .aapd
+//aapd line-height
 $line-height-base:            1.4; //1.5 !default;
 $line-height-sm:              1.2; //1.25 !default;
 $line-height-lg:              2 !default;
 
-//section .aapd
+//aapd font-size
 $h1-font-size:  $font-size-base * 2;      // 32 
 $h2-font-size:  $font-size-base * 1.5;    // 24
 $h3-font-size:  $font-size-base * 1.25;   // 20

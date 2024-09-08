@@ -1,0 +1,57 @@
+
+.btn{
+    padding: 8px;    
+    border-radius: $border-radius-xs;
+    text-align: center;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.btn-outline{
+    padding: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: $border-radius-xs;
+    text-align: center;
+    line-height: 20px;
+}
+
+.btn-primary{
+    color: $white;
+    background: $primary;
+    &:active{
+        background: $primary-700;
+    }
+}
+
+.btn-outline-primary{
+    color: $primary;
+    background: $white;
+    border-color: $primary;
+}
+
+.btn-secondary{
+    color: $white;
+    background: $secondary;
+    &:active{
+        background: $secondary-800;
+    }
+}
+
+.btn-tertiary{
+    color: $white;
+    background: $tertiary;
+    &:active{
+        background: $tertiary-600;
+    }
+}
+
+.btn-compl {
+    color: $white;
+    background: $complementary-400;
+}
+
+.btn-gray{
+    color: $white;
+    background: $gray-300;
+}
