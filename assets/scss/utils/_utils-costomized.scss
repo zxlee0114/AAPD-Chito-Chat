@@ -1,166 +1,166 @@
-// // Utilities
-// $utilities: () !default;
-// $utilities: map-merge(
-//     (
-//         "font-size":(
-//             rfs: false,
-//             responsive: true,
-//             property: font-size,
-//             class: fs,
-//             values: $font-sizes,
-//         ),
-//         "font-weight": (
-//             responsive: true,
-//             property: font-weight,
-//             class: fw,
-//             values: (
-//                 400: $font-weight-normal,
-//                 500: $font-weight-medium,
-//                 600: $font-weight-semibold,
-//                 700: $font-weight-bold,
-//             )
-//         ),
-//         "text-indent": (
-//             responsive: true,
-//             property: text-indent,
-//             class: ti,
-//             values: (
-//               none: 0,
-//             )
-//           ),
-//         "rounded": (
-//             responsive: true,
-//             property: border-radius,
-//             class: rounded,
-//             values: (
-//                 null: $border-radius-xs,    // 8px
-//                 0: 0,                       // 0px
-//                 1: $border-radius-xxs,      // 4px
-//                 2: $border-radius-xs,       // 8px
-//                 3: $border-radius-sm,       // 12px
-//                 4: $border-radius-md,       // 16px
-//                 5: $border-radius-lg,       // 20px
-//                 6: $border-radius-xl,       // 24px
-//                 circle: 50%,
-//                 pill: var(--#{$prefix}border-radius-pill)
-//              )
-//          ),
-//          "rounded-top": (
-//             responsive: true,
-//             property: border-top-left-radius border-top-right-radius,
-//             class: rounded-top,
-//             values: (
-//                 null: $border-radius-xs,    // 8px
-//                 0: 0,                       // 0px
-//                 1: $border-radius-xxs,       // 4px
-//                 2: $border-radius-xs,       // 8px
-//                 3: $border-radius-sm,       // 12px
-//                 4: $border-radius-md,       // 16px
-//                 5: $border-radius-lg,       // 20px
-//                 6: $border-radius-xl,       // 24px
-//                 circle: 50%,
-//                 pill: var(--#{$prefix}border-radius-pill)
-//              )
-//          ),
-//          "rounded-end": (
-//             responsive: true,
-//             property: border-top-right-radius border-bottom-right-radius,
-//             class: rounded-end,
-//             values: (
-//                 null: $border-radius-xs,    // 8px
-//                 0: 0,                       // 0px
-//                 1: $border-radius-xxs,      // 4px
-//                 2: $border-radius-xs,       // 8px
-//                 3: $border-radius-sm,       // 12px
-//                 4: $border-radius-md,       // 16px
-//                 5: $border-radius-lg,       // 20px
-//                 6: $border-radius-xl,       // 24px
-//                 circle: 50%,
-//                 pill: var(--#{$prefix}border-radius-pill)
-//              )
-//          ),
-//          "rounded-bottom": (
-//             responsive: true,
-//             property: border-bottom-right-radius border-bottom-left-radius,
-//             class: rounded-bottom,
-//             values: (
-//                 null: $border-radius-xs,    // 8px
-//                 0: 0,                       // 0px
-//                 1: $border-radius-xxs,      // 4px
-//                 2: $border-radius-xs,       // 8px
-//                 3: $border-radius-sm,       // 12px
-//                 4: $border-radius-md,       // 16px
-//                 5: $border-radius-lg,       // 20px
-//                 6: $border-radius-xl,       // 24px
-//                 circle: 50%,
-//                 pill: var(--#{$prefix}border-radius-pill)
-//              )
-//          ),
-//          "rounded-top-start": (
-//             responsive: true,
-//             property: border-top-left-radius,
-//             class: rounded-top-start,
-//             values: (
-//                 null: $border-radius-xs,    // 8px
-//                 0: 0,                       // 0px
-//                 1: $border-radius-xxs,      // 4px
-//                 2: $border-radius-xs,       // 8px
-//                 3: $border-radius-sm,       // 12px
-//                 4: $border-radius-md,       // 16px
-//                 5: $border-radius-lg,       // 20px
-//                 6: $border-radius-xl,       // 24px
-//                 circle: 50%,
-//                 pill: var(--#{$prefix}border-radius-pill)
-//              )
-//          ),
-//          "rounded-top-end": (
-//             responsive: true,
-//             property: border-top-right-radius,
-//             class: rounded-top-end,
-//             values: (
-//                 null: $border-radius-xs,    // 8px
-//                 0: 0,                       // 0px
-//                 1: $border-radius-xxs,      // 4px
-//                 2: $border-radius-xs,       // 8px
-//                 3: $border-radius-sm,       // 12px
-//                 4: $border-radius-md,       // 16px
-//                 5: $border-radius-lg,       // 20px
-//                 6: $border-radius-xl,       // 24px
-//                 circle: 50%,
-//                 pill: var(--#{$prefix}border-radius-pill)
-//              )
-//          ),
-//          "rounded-bottom-end": (
-//             responsive: true,
-//             property: border-bottom-right-radius,
-//             class: rounded-bottom-end,
-//             values: (
-//                 null: $border-radius-xs,    // 8px
-//                 0: 0,                       // 0px
-//                 1: $border-radius-xxs,      // 4px
-//                 2: $border-radius-xs,       // 8px
-//                 3: $border-radius-sm,       // 12px
-//                 4: $border-radius-md,       // 16px
-//                 5: $border-radius-lg,       // 20px
-//                 6: $border-radius-xl,       // 24px
-//                 circle: 50%,
-//                 pill: var(--#{$prefix}border-radius-pill)
-//              )
-//          ),
+// Utilities
+$utilities: () !default;
+$utilities: map-merge(
+    (
+        "font-size":(
+            rfs: false,
+            responsive: true,
+            property: font-size,
+            class: fs,
+            values: $font-sizes,
+        ),
+        "font-weight": (
+            responsive: true,
+            property: font-weight,
+            class: fw,
+            values: (
+                400: $font-weight-normal,
+                500: $font-weight-medium,
+                600: $font-weight-semibold,
+                700: $font-weight-bold,
+            )
+        ),
+        "text-indent": (
+            responsive: true,
+            property: text-indent,
+            class: ti,
+            values: (
+              none: 0,
+            )
+          ),
+        "rounded": (
+            responsive: true,
+            property: border-radius,
+            class: rounded,
+            values: (
+                null: $border-radius-xs,    // 8px
+                0: 0,                       // 0px
+                1: $border-radius-xxs,      // 4px
+                2: $border-radius-xs,       // 8px
+                3: $border-radius-sm,       // 12px
+                4: $border-radius-md,       // 16px
+                5: $border-radius-lg,       // 20px
+                6: $border-radius-xl,       // 24px
+                circle: 50%,
+                pill: var(--#{$prefix}border-radius-pill)
+             )
+         ),
+         "rounded-top": (
+            responsive: true,
+            property: border-top-left-radius border-top-right-radius,
+            class: rounded-top,
+            values: (
+                null: $border-radius-xs,    // 8px
+                0: 0,                       // 0px
+                1: $border-radius-xxs,       // 4px
+                2: $border-radius-xs,       // 8px
+                3: $border-radius-sm,       // 12px
+                4: $border-radius-md,       // 16px
+                5: $border-radius-lg,       // 20px
+                6: $border-radius-xl,       // 24px
+                circle: 50%,
+                pill: var(--#{$prefix}border-radius-pill)
+             )
+         ),
+         "rounded-end": (
+            responsive: true,
+            property: border-top-right-radius border-bottom-right-radius,
+            class: rounded-end,
+            values: (
+                null: $border-radius-xs,    // 8px
+                0: 0,                       // 0px
+                1: $border-radius-xxs,      // 4px
+                2: $border-radius-xs,       // 8px
+                3: $border-radius-sm,       // 12px
+                4: $border-radius-md,       // 16px
+                5: $border-radius-lg,       // 20px
+                6: $border-radius-xl,       // 24px
+                circle: 50%,
+                pill: var(--#{$prefix}border-radius-pill)
+             )
+         ),
+         "rounded-bottom": (
+            responsive: true,
+            property: border-bottom-right-radius border-bottom-left-radius,
+            class: rounded-bottom,
+            values: (
+                null: $border-radius-xs,    // 8px
+                0: 0,                       // 0px
+                1: $border-radius-xxs,      // 4px
+                2: $border-radius-xs,       // 8px
+                3: $border-radius-sm,       // 12px
+                4: $border-radius-md,       // 16px
+                5: $border-radius-lg,       // 20px
+                6: $border-radius-xl,       // 24px
+                circle: 50%,
+                pill: var(--#{$prefix}border-radius-pill)
+             )
+         ),
+         "rounded-top-start": (
+            responsive: true,
+            property: border-top-left-radius,
+            class: rounded-top-start,
+            values: (
+                null: $border-radius-xs,    // 8px
+                0: 0,                       // 0px
+                1: $border-radius-xxs,      // 4px
+                2: $border-radius-xs,       // 8px
+                3: $border-radius-sm,       // 12px
+                4: $border-radius-md,       // 16px
+                5: $border-radius-lg,       // 20px
+                6: $border-radius-xl,       // 24px
+                circle: 50%,
+                pill: var(--#{$prefix}border-radius-pill)
+             )
+         ),
+         "rounded-top-end": (
+            responsive: true,
+            property: border-top-right-radius,
+            class: rounded-top-end,
+            values: (
+                null: $border-radius-xs,    // 8px
+                0: 0,                       // 0px
+                1: $border-radius-xxs,      // 4px
+                2: $border-radius-xs,       // 8px
+                3: $border-radius-sm,       // 12px
+                4: $border-radius-md,       // 16px
+                5: $border-radius-lg,       // 20px
+                6: $border-radius-xl,       // 24px
+                circle: 50%,
+                pill: var(--#{$prefix}border-radius-pill)
+             )
+         ),
+         "rounded-bottom-end": (
+            responsive: true,
+            property: border-bottom-right-radius,
+            class: rounded-bottom-end,
+            values: (
+                null: $border-radius-xs,    // 8px
+                0: 0,                       // 0px
+                1: $border-radius-xxs,      // 4px
+                2: $border-radius-xs,       // 8px
+                3: $border-radius-sm,       // 12px
+                4: $border-radius-md,       // 16px
+                5: $border-radius-lg,       // 20px
+                6: $border-radius-xl,       // 24px
+                circle: 50%,
+                pill: var(--#{$prefix}border-radius-pill)
+             )
+         ),
          
-//         "border-opacity": (
-//             responsive: true,
-//             css-var: true,
-//             class: border-opacity,
-//             values: (
-//                 10: .1,
-//                 25: .25,
-//                 50: .5,
-//                 75: .75,
-//                 100: 1
-//             )
-//         ),
+        "border-opacity": (
+            responsive: true,
+            css-var: true,
+            class: border-opacity,
+            values: (
+                10: .1,
+                25: .25,
+                50: .5,
+                75: .75,
+                100: 1
+            )
+        ),
 
-//      ),
-//      $utilities
-//  );
+     ),
+     $utilities
+ );
