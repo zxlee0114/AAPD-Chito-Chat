@@ -1,4 +1,16 @@
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  background-image: url(/assets/images/index/noisy-gradients.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.header-time-text{
+  color:#000;
+  text-align: center;
+  //font-family: "SF Pro";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 590;
+  line-height: 22px; /* 129.412% */
+  padding-top: 19px;
+  width: 33.33%;
 }

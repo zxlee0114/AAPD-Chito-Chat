@@ -298,7 +298,7 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-//section .aapd
+//aapd color
 $primary-950:   #122D3F;
 $primary-900:   #1B455F;
 $primary-800:   #1A5272;
@@ -668,7 +668,8 @@ $border-radius-lg:            1.25rem;
 $border-radius-md:            1rem;            
 $border-radius-sm:            .75rem;            
 $border-radius-xs:            .5rem;          
-$border-radius-xxs:           .25rem;          
+$border-radius-xxs:           .25rem;
+$border-radius-tiny:          .125rem;          
 //
 
 $border-radius:               .375rem !default;
