@@ -35,6 +35,7 @@ $utilities: map-merge(
             values: (
                 null: $border-radius-xs,    // 8px
                 0: 0,                       // 0px
+                tiny: $border-radius-tiny,  // 2px
                 1: $border-radius-xxs,      // 4px
                 2: $border-radius-xs,       // 8px
                 3: $border-radius-sm,       // 12px

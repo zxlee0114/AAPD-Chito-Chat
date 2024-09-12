@@ -4,7 +4,7 @@ import Swiper from "swiper/bundle";
 
 // Start
 
-const heroSwiper = new Swiper(".heroSwiper", {
+const indexSwiper = new Swiper(".indexSwiper", {
   slidesPerView: 1,
   centeredSlides: true,
   // 左右箭頭
@@ -13,18 +13,19 @@ const heroSwiper = new Swiper(".heroSwiper", {
     nextEl: ".heroSwiper-button-next",
   },
   pagination: {
-    el: ".heroSwiper-pagination",
+    el: ".indexSwiper-pagination",
   },
 
   watchSlidesProgress: true,
-  breakpoints: {
-    768: {
-      spaceBetween: 15, // slide 間距
-    },
-    992: {
-      spaceBetween: 40, // slide 間距
-    }
-  },
+  spaceBetween: 16, 
+  // breakpoints: {
+  //   768: {
+  //     spaceBetween: 15, // slide 間距
+  //   },
+  //   992: {
+  //     spaceBetween: 40, // slide 間距
+  //   }
+  // },
   // 循環播放
   loop: true,
   // 自動撥放

@@ -8,6 +8,16 @@
     font-size: 12px;
     line-height: 16px;
 }
+.tag-sm {
+    display: inline-block;
+    padding: 4px 8px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: $border-radius-xxs;
+    background: $white;
+    font-size: 12px;
+    line-height: 16px;
+}
 
 .tag-primary{
     color: $primary;
@@ -22,4 +32,9 @@
 .tag-tertiary{
     color: $tertiary;
     border-color: $tertiary;
+}
+
+.tag-gray{
+    color: $gray-400;
+    border-color: $gray-400;
 }
