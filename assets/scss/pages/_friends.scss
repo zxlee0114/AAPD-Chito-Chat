@@ -1,0 +1,19 @@
+.header-bg-friends {
+    background-image:  url(/assets/images/friends-bg.png);
+    background-color: $neutral-50;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 374px auto;
+}
+
+.friends-bg-top {
+    background-image:  url(/assets/images/friends-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.chat-hint {
+    font-size: 8px;
+    line-height: 1;
+    padding: 4.5px 9.5px;
+}
