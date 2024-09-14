@@ -16,4 +16,25 @@ a{
     text-decoration: none;
     color: inherit;
 }
-  
+
+.nav-tabs {
+    border: 0;
+}
+
+.nav-tabs .nav-link {
+    border: 0;
+    color: $neutral-300;
+    .active-deco {
+        height: 2px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+    &.nav-learning.active {
+        color: $primary;
+        .active-deco {
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+}
