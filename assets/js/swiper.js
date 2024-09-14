@@ -30,6 +30,22 @@ const friendSwiper = new Swiper(".friendSwiper",
   }
 )
 
+const articleSwiper = new Swiper(".articleSwiper",
+  {
+    slidesPerView: 1,
+    spaceBetween: 8,
+    loop:true,
+    autoplay: {
+      delay: 2000,
+    },
+    pagination: {
+      el: ".articleSwiper-pagination",
+    },
+  }
+)
+
+
+
 const learningSwiper = new Swiper(".learningSwiper", {
   slidesPerView: 2.3,
   spaceBetween: 12, 

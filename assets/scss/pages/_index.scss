@@ -10,17 +10,15 @@
   border-radius: var(--Radius-s, 12px);
   border: 1px solid var(--Base-Neutral-100, #E7E7E7);
   background: linear-gradient(180deg, #E4F1FA -5.43%, #C4E2F3 23.91%, #F6F6F6 99.94%), var(--Base-Neutral-0, #FFF);
-
   /* shadow-sm */
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.02), 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
-}
-
-.jap-learning-content{
-  height: 140px;
-  padding: 12px 18px;
-  border-radius: var(--Radius-s, 12px);
-  border: 1px solid var(--Base-Neutral-100, #E7E7E7);
-  background: #FFF;
+  &-content{
+    height: 140px;
+    padding: 12px 18px;
+    border-radius: var(--Radius-s, 12px);
+    border: 1px solid var(--Base-Neutral-100, #E7E7E7);
+    background: #FFF;
+  }
 }
 
 .course-progress{
@@ -30,21 +28,21 @@
   padding-top: 25px;
   padding-bottom: 25px;
   margin: 0 26.75px;
-}
-.course-progress-number{
-  text-align: center;
-  font-size: 24.6px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 29.383px; /* 119.444% */
-  letter-spacing: 0.015px;
-}
-.course-progress-percentage{
-  font-size: 9.567px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 13.667px;
-  letter-spacing: 0.006px;
+  &-number{
+    text-align: center;
+    font-size: 24.6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.383px; /* 119.444% */
+    letter-spacing: 0.015px;
+  }
+  &-percentage{
+    font-size: 9.567px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13.667px;
+    letter-spacing: 0.006px;
+  }
 }
 
 .nearby-people{

@@ -1,5 +1,6 @@
 .tag{
     display: inline-block;
+    max-height: 24px;
     padding: 4px 8px;
     border-width: 1px;
     border-style: solid;
@@ -10,6 +11,7 @@
 }
 .tag-sm {
     display: inline-block;
+    max-height: 22px;
     padding: 4px 8px 2px;
     border-width: 1px;
     border-style: solid;

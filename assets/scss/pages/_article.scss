@@ -1,0 +1,45 @@
+.header-bg-article{
+    background-image: url(/assets/images/article/bg-tertiary-gradient.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 374px auto;
+}
+
+.nav-tabs{
+    border:0;
+}
+
+.nav-tabs .nav-link {
+    border: 0;
+    color: $neutral-300;
+    .active-deco-tertiary {
+        height: 2px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+    &.nav-article.active {
+        color: $tertiary-600;
+        background: transparent;
+        .active-deco-tertiary{
+            background-color: $tertiary-600;
+            border-color: $tertiary-600;
+        }
+    }
+}
+
+.form-control{
+    text-indent: 30px;
+}
+
+.form-control::placeholder{
+    color: $gray-300;
+    // vertical-align: bottom;
+
+    /* T5_16 Regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+}

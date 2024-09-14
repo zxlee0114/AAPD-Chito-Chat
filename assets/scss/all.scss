@@ -25,8 +25,10 @@
 //layout
 @import './layout/header.scss';
 @import './layout/footer.scss';
+@import './layout/header-tertiary';
 
 //pages
 @import './pages/index.scss';
 @import './pages/learning-main.scss';
 @import './pages/friends';
+@import './pages/article';
