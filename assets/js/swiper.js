@@ -50,3 +50,8 @@ const learningSwiper = new Swiper(".learningSwiper", {
   slidesPerView: 2.3,
   spaceBetween: 12, 
 });
+
+const artabSwiper = new Swiper(".artabSwiper", {
+  slidesPerView: 5.1,
+  spaceBetween: 8, 
+});
