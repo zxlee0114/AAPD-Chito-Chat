@@ -162,6 +162,18 @@ $utilities: map-merge(
             )
         ),
 
+        "shadow": (
+        property: box-shadow,
+        class: shadow,
+        values: (
+            null: var(--#{$prefix}box-shadow),
+            sm: $box-shadow-sm,
+            md: $box-shadow-md,
+            lg: $box-shadow-lg,
+            none: none,
+            )
+        ),
+
      ),
      $utilities
  );

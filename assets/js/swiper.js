@@ -5,21 +5,30 @@ import Swiper from "swiper/bundle";
 // Start
 
 const indexSwiper = new Swiper(".indexSwiper", {
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   centeredSlides: true,
   pagination: {
     el: ".indexSwiper-pagination",
   },
-
   watchSlidesProgress: true,
   spaceBetween: 16, 
   // 循環播放
   loop: true,
-  // 自動撥放
+  // 自動播放
   autoplay: {
     delay: 2000,
   },
+  // slidesOffsetBefore : 40,
+  // slidesOffsetAfter  : 40,
 });
+
+const friendSwiper = new Swiper(".friendSwiper",
+  {
+    slidesPerView: 1,
+    spaceBetween: 8,
+    loop:true,
+  }
+)
 
 const learningSwiper = new Swiper(".learningSwiper", {
   slidesPerView: 2.3,
