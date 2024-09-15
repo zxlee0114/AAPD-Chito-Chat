@@ -52,6 +52,6 @@ const learningSwiper = new Swiper(".learningSwiper", {
 });
 
 const artabSwiper = new Swiper(".artabSwiper", {
-  slidesPerView: 5.1,
-  spaceBetween: 8, 
+  slidesPerView: 5,
+  spaceBetween: -4, 
 });
