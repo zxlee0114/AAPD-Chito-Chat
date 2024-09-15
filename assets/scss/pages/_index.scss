@@ -54,7 +54,7 @@
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.02), 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 }
 
-.nearby-activity{
+.nearby-event{
   border-radius: var(--Radius-s, 12px);
   border: 1px solid var(--Base-Neutral-100, #E7E7E7);
   background: linear-gradient(180deg, #E9F6E2 0.07%, #B1DB9A 23.04%, #F6F6F6 59.99%);
@@ -63,6 +63,6 @@
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.02), 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 }
 
-.activity-card-info a:hover{
+.event-card-info a:hover{
   text-decoration: underline;
 }

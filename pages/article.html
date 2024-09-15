@@ -20,22 +20,24 @@
             </button>
             </li>
             <li class="nav-item w-50" role="presentation">
-            <button class="nav-link nav-article w-100 text-center fs-h3 fw-700 py-s px-xs d-flex flex-column align-items-center" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activity" type="button" role="tab" aria-controls="activity" aria-selected="false">參與活動
+            <button class="nav-link nav-article w-100 text-center fs-h3 fw-700 py-s px-xs d-flex flex-column align-items-center" id="event-tab" data-bs-toggle="tab" data-bs-target="#event" type="button" role="tab" aria-controls="event" aria-selected="false">參與活動
                 <span class="w-100 active-deco-tertiary mt-xxs"></span>
             </button>
             </li>
         </ul>
-  
+    </div>
   <!-- Tab panes -->
   <div class="tab-content">
     <div class="tab-pane fade show active" id="article" role="tabpanel" aria-labelledby="article-tab" tabindex="0">
         <!-- 探索文章 -->
          <!-- search bar -->
-        <form class="article-search-input position-relative my-m" role="search">
-            <span class="text-gray-500 material-symbols-outlined position-absolute top-50 translate-middle-y" style="left: 10px; width: 20px; height: 20px;">search</span>
-            <input class="form-control d-inline-block" type="search" placeholder="搜尋" aria-label="Search">
-            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-        </form>
+        <div class="container">
+            <form class="article-search-input position-relative my-m" role="search">
+                <span class="text-gray-500 material-symbols-outlined position-absolute top-50 translate-middle-y" style="left: 10px; width: 20px; height: 20px;">search</span>
+                <input class="form-control d-inline-block" type="search" placeholder="搜尋" aria-label="Search">
+                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+        </div>
 
         <div class="container">
             <section class="article-selected">
@@ -174,6 +176,7 @@
             <div class="separator my-m" style="height: 1px; background: #D9D9D9;"></div>
         </div>
 
+        <!-- 文章分類區塊 -->
         <div class="container">
             <ul class="article-tab-list nav nav-pills" id="pills-tab" role="tablist">
                 <div class="swiper artabSwiper">
@@ -211,6 +214,8 @@
                     </div>
                 </div>
             </ul>
+
+            <!-- article tab content -->
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="article-all" role="tabpanel" aria-labelledby="article-all-tab" tabindex="0">
                     <h3 class="fs-h3 fw-700 my-m">全部文章</h3>
@@ -226,21 +231,21 @@
                                             <a class="d-flex" href="#" title="comment">
                                                 <span class="material-symbols-outlined text-primary fs-t5 me-tiny">mark_chat_unread
                                                 </span>
-                                                <p class="fs-t7">32</p>
+                                                <p class="fs-t7 mb-0">32</p>
                                             </a>
                                         </li>
-                                        <li class="me-s mb-0">
+                                        <li class="me-s">
                                             <a class="d-flex" href="#" title="like">
                                                 <span class="material-symbols-outlined text-primary fs-t5 me-tiny">favorite
                                                 </span>
-                                                <p class="fs-t7">195</p>
+                                                <p class="fs-t7 mb-0">195</p>
                                             </a>
                                         </li>
-                                        <li class="mb-0">
+                                        <li>
                                             <a class="d-flex" href="#" title="share">
                                                 <span class="material-symbols-outlined text-primary fs-t5">share
                                                 </span>
-                                                <p class="fs-t7">195</p>
+                                                <p class="fs-t7 mb-0">195</p>
                                             </a>
                                         </li>
                                     </ul>
@@ -271,17 +276,221 @@
         </div>
 
     </div>
-    <div class="tab-pane" id="activity" role="tabpanel" aria-labelledby="activity-tab" tabindex="0">
+
+    <!-- event tab content -->
+    <div class="tab-pane" id="event" role="tabpanel" aria-labelledby="event-tab" tabindex="0">
         <!-- search bar -->
-        <form class="article-search-input position-relative mt-m" role="search">
-            <span class="text-gray-500 material-symbols-outlined position-absolute top-50 translate-middle-y" style="left: 10px; width: 20px; height: 20px;">search</span>
-            <input class="form-control d-inline-block" type="search" placeholder="搜尋" aria-label="Search">
-            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-        </form>
+         <div class="container">
+             <form class="article-search-input position-relative my-m" role="search">
+                 <span class="text-gray-500 material-symbols-outlined position-absolute top-50 translate-middle-y" style="left: 10px; width: 20px; height: 20px;">search</span>
+                 <input class="form-control d-inline-block" type="search" placeholder="搜尋" aria-label="Search">
+                 <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+             </form>
+         </div>
+
+        <div class="container">
+            <section class="online-event">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="fs-h3 fw-700 text-gray-900">我的線上活動</h3>
+                    <a class="fs-t6 text-gray-900 opacity-50" href="#">查看清單<span class="material-symbols-outlined fs-t7 ms-xxs ">arrow_forward_ios</span></a>
+                </div>
+                <div class="p-m border border-gray-100 rounded-3">
+                    <p class="fs-t4 text-gray-300 mb-0">目前還沒有預約任何活動...</p>
+                    <div class="border mt-m" style="background-color: #D9D9D9; height: 1px;"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- inpage navbar -->
+        <div class="container">
+            <section class="event-selector d-flex justify-content-between align-items-center my-m">
+                <ul class="nav nav-pills fs-h6 fw-700 p-xs border border-gray-100 rounded-2 me-xs" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active btn btn-white me-xs" style="width: 56px;" id="online-event-tab" data-bs-toggle="pill" data-bs-target="#online-event" type="button" role="tab" aria-controls="online-event" aria-selected="true">線上</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link btn btn-white" style="width: 56px;" id="offline-event-tab" data-bs-toggle="pill" data-bs-target="#offline-event" type="button" role="tab" aria-controls="offline-event" aria-selected="false">線下</button>
+                    </li>
+                </ul>
+                <div class="seperator bg-gray-100 border border-gray-100 me-xs" style="height: 49px; width: 1px;"></div>
+                <ul class="nav nav-pills fs-h6 fw-700">
+                    <li class="nav-item dropdown">
+                      <button class="nav-link dropdown-toggle btn btn-primary me-xs" style="width: 56px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">類別</button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">推薦活動</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle btn btn-primary me-xs" style="width: 56px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">區域</button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">推薦活動</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle btn btn-primary me-xs" style="width: 56px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">時間</button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">推薦活動</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="online-event" role="tabpanel" aria-labelledby="online-event-tab" tabindex="0">
+                    <div class="container">
+                        <section class="online-event-wrapper">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="fs-h3 fw-700 text-gray-900 mb-0">全部活動</h3>
+                                <p class="fs-t6 text-gray-900 opacity-50 mb-0">重置篩選<span class="material-symbols-outlined fs-t6 ms-xxs align-middle">undo</span></p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="container">
+                        <ul class="event-list list-unstyled my-m">
+                            <!-- 活動一 -->
+                            <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                              <div class="d-flex align-items-end">
+                                <!-- 活動介紹 -->
+                                <div class="event-card-intro me-s" style="width: 189px;">
+                                  <a href="#" class="text-nowrap tag tag-primary me-xs">文化</a>
+                                  <a href="#" class="text-nowrap tag tag-secondary">預約 • 12人 </a>
+                                  <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">J-pop：日本流行音樂的全球魅力</h3>
+                                  <p class="fs-t6 article-text-truncate">J-pop（日本流行音樂）以其多樣性和創新性贏得了全球年輕人的喜愛。從嵐到AKB48，這些音樂作品融合了流行、電子和搖滾等風格，展現出獨特的音樂美感。J-pop不僅在日本國內風靡一時，還在亞洲、歐美等地廣受歡迎。日本音樂人的創作才華和對視覺表現的追求，使J-pop成為全球音樂市場的重要一員，推動了日本文化在國際間的交流和傳播。</p>
+                                </div>
+                                <!-- 活動圖片 -->
+                                <div class="event-card-img">
+                                  <img class="object-fit-cover" src="../assets/images/event/event-1.png" alt="J-pop：日本流行音樂的全球魅力">
+                                </div>
+                              </div>
+                              <!-- 活動時間、地區 -->
+                              <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                <!-- 我是分隔線 -->
+                                <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                              </ul>
+                            </li>
+                             <!-- 活動二 -->
+                             <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                                <div class="d-flex align-items-end">
+                                  <!-- 活動介紹 -->
+                                  <div class="event-card-intro me-s" style="width: 189px;">
+                                    <a href="#" class="text-nowrap tag tag-primary me-xs">留學</a>
+                                    <a href="#" class="text-nowrap tag tag-secondary">預約 • 8人 </a>
+                                    <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">書桌放什麼？</h3>
+                                    <p class="fs-t6 article-text-truncate">標題：書桌整理：提升效率的第一步。書桌整理不僅是環境整潔的開始，更是提升工作效率和心靈清潔的重要一環。一個井然有序的工作空間，不僅讓人感到舒適，還能幫助集中注意力，提高工作效率。將文件歸檔整理，清除多餘物品，並保持清潔的工作環境，能夠幫助減少分心，讓每天的工作更加流暢。這些簡單的整理技巧不僅改善了工作效率，還能為生活帶來更多的秩序和滿足感。</p>
+                                  </div>
+                                  <!-- 活動圖片 -->
+                                  <div class="event-card-img">
+                                    <img class="object-fit-cover" src="../assets/images/event/event-2.png" alt="書桌放什麼？">
+                                  </div>
+                                </div>
+                                <!-- 活動時間、地區 -->
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </li>
+                              <!-- 活動三 -->
+                             <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                                <div class="d-flex align-items-end">
+                                  <!-- 活動介紹 -->
+                                  <div class="event-card-intro me-s" style="width: 189px;">
+                                    <a href="#" class="text-nowrap tag tag-primary me-xs">語言</a>
+                                    <a href="#" class="text-nowrap tag tag-secondary">預約 • 20人 </a>
+                                    <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">語言交流會</h3>
+                                    <p class="fs-t6 article-text-truncate">歡迎參加語言交流會，通過小組討論和互動遊戲提升語言技能，結交來自世界各地的新朋友！</p>
+                                  </div>
+                                  <!-- 活動圖片 -->
+                                  <div class="event-card-img">
+                                    <img class="object-fit-cover" src="../assets/images/event/event-3.png" alt="語言交流會">
+                                  </div>
+                                </div>
+                                <!-- 活動時間、地區 -->
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </li>
+                              <!-- 活動四 -->
+                             <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                                <div class="d-flex align-items-end">
+                                  <!-- 活動介紹 -->
+                                  <div class="event-card-intro me-s" style="width: 189px;">
+                                    <a href="#" class="text-nowrap tag tag-primary me-xs">就職</a>
+                                    <a href="#" class="text-nowrap tag tag-secondary">預約 • 22人 </a>
+                                    <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">企業面試準備</h3>
+                                    <p class="fs-t6 article-text-truncate">面試前需研究公司背景、準備回答常見問題並提前訓練自信表達。穿著適當且準時到達面試地點，展現出對職位的熱情和專業素養。</p>
+                                  </div>
+                                  <!-- 活動圖片 -->
+                                  <div class="event-card-img">
+                                    <img class="object-fit-cover" src="../assets/images/event/event-4.png" alt="企業面試準備">
+                                  </div>
+                                </div>
+                                <!-- 活動時間、地區 -->
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </li>
+                              <!-- 活動五 -->
+                             <li class="event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">
+                                <div class="d-flex align-items-end">
+                                  <!-- 活動介紹 -->
+                                  <div class="event-card-intro me-s" style="width: 189px;">
+                                    <a href="#" class="text-nowrap tag tag-primary me-xs">動漫</a>
+                                    <a href="#" class="text-nowrap tag tag-secondary">預約 • 8人 </a>
+                                    <h3 class="ts-h3 fw-700 mb-0 py-xs text-truncate">探索日本動漫文化</h3>
+                                    <p class="fs-t6 article-text-truncate">日本動漫以其多樣化的類型和深刻的故事情節吸引全球觀眾。探索其歷史、主題和影響力，並了解如何在日本深入體驗這一文化現象。</p>
+                                  </div>
+                                  <!-- 活動圖片 -->
+                                  <div class="event-card-img">
+                                    <img class="object-fit-cover" src="../assets/images/event/event-5.png" alt="探索日本動漫文化">
+                                  </div>
+                                </div>
+                                <!-- 活動時間、地區 -->
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-primary fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="tab-pane fade" id="offline-event" role="tabpanel" aria-labelledby="offline-event-tab" tabindex="0">
+                    線下活動
+                </div>
+
     </div>
   </div>
         
-    </div>
 
 
     <%- include('./layout/footer'); -%>
