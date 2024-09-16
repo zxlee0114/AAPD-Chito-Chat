@@ -12,6 +12,7 @@ const indexSwiper = new Swiper(".indexSwiper", {
   },
   watchSlidesProgress: true,
   spaceBetween: 16, 
+  slidesPerView: 1.2,
   // 循環播放
   loop: true,
   // 自動播放
@@ -25,20 +26,17 @@ const indexSwiper = new Swiper(".indexSwiper", {
 const mapmodalSwiper = new Swiper(".mapmodalSwiper", {
   centeredSlides: true,
   loop: true,
-  slidesPerView: 1,
-  spaceBetween: 16, 
+  slidesPerView: 1.1,
+  spaceBetween: 4, 
 });
 
-const friendSwiper = new Swiper(".friendSwiper",
-  {
+const friendSwiper = new Swiper(".friendSwiper", {
     slidesPerView: 1,
     spaceBetween: 8,
     loop:true,
-  }
-)
+});
 
-const articleSwiper = new Swiper(".articleSwiper",
-  {
+const articleSwiper = new Swiper(".articleSwiper", {
     slidesPerView: 1,
     spaceBetween: 8,
     loop:true,
@@ -48,10 +46,7 @@ const articleSwiper = new Swiper(".articleSwiper",
     pagination: {
       el: ".articleSwiper-pagination",
     },
-  }
-)
-
-
+});
 
 const learningSwiper = new Swiper(".learningSwiper", {
   slidesPerView: 2.3,
