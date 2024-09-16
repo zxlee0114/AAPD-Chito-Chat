@@ -242,9 +242,113 @@
       <div class="container">
         <section class="nearby-event mt-m py-s px-m">
           <h3 class="fs-h3 fw-700 text-gray-900">附近的活動</h3>
-          <section class="nearby-event-map">
-            <img class="rounded-3 mb-s" src="../assets/images/index/map_w_icon.png" alt="nearby-event-map">
-          </section>
+          <section class="nearby-event-map mb-s">
+            <a href="#mapInsert"  type="button" data-bs-toggle="modal">
+              <img class="object-fit-cover" src="../assets/images/index/map_w_icon.png" alt="附近的活動">
+            </a>
+            <div class="modal fade" id="mapInsert" tabindex="-1" aria-labelledby="mapInsert" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-h3 fw-700 mx-auto" id="mapInsert">附近的活動</h1>
+                    <button type="button" class="btn-close m-0 opacity-0" data-bs-dismiss="modal" aria-label="Close" disabled></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="../assets/images/index/map_modal.png" class="w-100 object-fit-cover position-relative" alt="附近的活動">
+                    <div class="position-absolute start-50" style="top: 30%">
+                      <div class="swiper mapmodalSwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <!-- 卡片一 -->
+                            <a href="#" title="查看活動">
+                              <div class="p-m bg-white rounded-2 border bg-gray-100 text-gray-900 mx-auto" style="width: 361px;">
+                                <div class="d-flex">
+                                  <div class="me-s" style="width: 189px;">
+                                    <a class="tag tag-tertiary me-xs" href="#">寵物</a>
+                                    <a class="tag tag-secondary" href="#">預約 • 8人 </a>
+                                    <h3 class="fs-h3 fw-700 text-truncate mt-xs mb-0">狗狗奔跑日</h3>
+                                    <p class="fs-t6 text-truncate mt-xs mb-0">歡迎參加語言交流會，通過小組討論和互動遊戲提升語言技能，結交來自世界各地的新朋友！</p>
+                                  </div>
+                                  <div>
+                                    <img class="object-fit-cover" src="../assets/images/index/map-modal-1.png" alt="狗狗奔跑日">
+                                  </div>
+                                </div>
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs mb-0">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+
+                          <div class="swiper-slide">
+                            <!-- 卡片二 -->
+                            <a href="#" title="查看活動">
+                              <div class="p-m bg-white rounded-2 border bg-gray-100 text-gray-900 mx-auto" style="width: 361px;">
+                                <div class="d-flex">
+                                  <div class="me-s" style="width: 189px;">
+                                    <a class="tag tag-tertiary me-xs" href="#">就業</a>
+                                    <a class="tag tag-secondary" href="#">預約 • 21人 </a>
+                                    <h3 class="fs-h3 fw-700 text-truncate mt-xs mb-0">就業指南研討會</h3>
+                                    <p class="fs-t6 text-truncate mt-xs mb-0">這場研討會旨在為即將大學畢業的學生提供全面的就業指導。我們將討論大學畢業後的就業趨勢和挑戰，以及如何準備和撰寫出色的履歷和求職信。活動還包括面試技巧的分享和模擬面試，幫助參加者準備迎接真實的職場挑戰。</p>
+                                  </div>
+                                  <div>
+                                    <img class="object-fit-cover" src="../assets/images/index/map-modal-2.png" alt="就業指南研討會">
+                                  </div>
+                                </div>
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs mb-0">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                              </div>
+                            </a>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <!-- 卡片三 -->
+                          <a href="#" title="查看活動">
+                              <div class="p-m bg-white rounded-2 border bg-gray-100 text-gray-900 mx-auto" style="width: 361px;">
+                                <div class="d-flex">
+                                  <div class="me-s" style="width: 189px;">
+                                    <a class="tag tag-primary me-xs" href="#">語言</a>
+                                    <a class="tag tag-secondary" href="#">預約 • 8人 </a>
+                                    <h3 class="fs-h3 fw-700 text-truncate mt-xs mb-0">語言交流會</h3>
+                                    <p class="fs-t6 text-truncate mt-xs mb-0">歡迎參加語言交流會，通過小組討論和互動遊戲提升語言技能，結交來自世界各地的新朋友！</p>
+                                  </div>
+                                  <div>
+                                    <img class="object-fit-cover" src="../assets/images/index/map-modal-3.png" alt="語言交流會">
+                                  </div>
+                                </div>
+                                <ul class="event-card-info list-unstyled d-flex align-items-center mt-xs mb-0">
+                                  <li class="fs-t7" style="line-height: 16px; padding-right: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">location_on</span><a href="#" class="align-top">東京澀谷區</a></li>
+                                  <!-- 我是分隔線 -->
+                                  <li class="border-gray-600 border-end align-top" style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li style="background: transparent; height: 12px; width: 6px;"></li>
+                                  <li class="fs-t7" style="line-height: 16px; padding-left: 6px;"><span class="material-symbols-outlined text-tertiary-light fs-t5 me-tiny">event</span><a href="#" class="align-top">7/27 (土) • 10:00~12:00</a></li>
+                                </ul>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div> -->
+                </div>
+            </div>
+          </div>
+        </section>
           <ul class="nearby-event-list list-unstyled">
             <!-- 活動一 -->
             <li class="nearby-event-card p-m bg-white border border-gray-100 rounded-2 text-gray-900 mb-s">

@@ -22,6 +22,13 @@ const indexSwiper = new Swiper(".indexSwiper", {
   // slidesOffsetAfter  : 40,
 });
 
+const mapmodalSwiper = new Swiper(".mapmodalSwiper", {
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 16, 
+});
+
 const friendSwiper = new Swiper(".friendSwiper",
   {
     slidesPerView: 1,
@@ -55,3 +62,4 @@ const artabSwiper = new Swiper(".artabSwiper", {
   slidesPerView: 5,
   spaceBetween: -4, 
 });
+

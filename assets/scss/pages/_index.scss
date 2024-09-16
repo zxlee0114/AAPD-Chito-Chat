@@ -45,6 +45,10 @@
   }
 }
 
+.nearby-event-map .modalbody{
+    background-image: url(/assets/images/index/map_modal.png);
+}
+
 .nearby-people{
   border-radius: var(--Radius-s, 12px);
   border: 1px solid var(--Base-Neutral-100, #E7E7E7);
