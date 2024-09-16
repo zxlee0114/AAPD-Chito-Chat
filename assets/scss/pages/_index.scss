@@ -45,8 +45,10 @@
   }
 }
 
-.nearby-event-map .modalbody{
+.modal-map {
     background-image: url(/assets/images/index/map_modal.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .nearby-people{
