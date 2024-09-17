@@ -6,10 +6,6 @@
     background-size: 374px auto;
 }
 
-.nav-tabs{
-    border:0;
-}
-
 .nav-tabs .nav-link {
     border: 0;
     color: $neutral-300;
@@ -29,6 +25,12 @@
     }
 }
 
+.nav-pills .nav-link{
+    &.nav-off-event.active{
+        background-color: $tertiary-400;      
+        }
+    }
+
 .form-control{
     text-indent: 30px;
 }
@@ -43,8 +45,4 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 137.5% */
-}
-
-.article-tab.active{
-    background: $primary;
 }

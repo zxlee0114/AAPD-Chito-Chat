@@ -1,8 +1,25 @@
+//只調整背景圖片不透明度，不會影響其他內容
 .header {
-  background-image: url(/assets/images/index/noisy-gradients.png);
-  background-repeat: no-repeat;
-  background-position: top center;
+  position: relative; //置入背景圖片的地方設為相對定位
+  &::before{
+      content:"";
+      background-image: url(/assets/images/index/noisy-gradients.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      position: absolute; //背景圖片設為絕對定位
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; //四個定位點均設 0，以完全覆蓋相對定位內容
+      opacity: 0.7; //對背景圖片的設定
+  }
 }
+
+.header-top, .header-bot{
+  position: relative; //其他地方也設為相對定位
+}
+// 以上，還有其他兩種手法，請參見：https://ithelp.ithome.com.tw/articles/10290585
+
 .header-time-text {
   color:#000;
   text-align: center;

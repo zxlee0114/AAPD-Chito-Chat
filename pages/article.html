@@ -11,6 +11,7 @@
   <body class="header-bg-article" style="width: 375px; padding-top: 54px; padding-bottom: 75px;">
     <%- include('./layout/header-tertiary'); -%> 
 
+    <!-- 探索文章、參與活動 頁簽 -->
     <div class="container pt-xs">
                 <!-- Nav tabs -->
         <ul class="nav nav-tabs justify-content-center" id="tertiaryTab" role="tablist">
@@ -40,6 +41,7 @@
         </div>
 
         <div class="container">
+          <!-- 熱門精選 -->
             <section class="article-selected">
                 <h3 class="h3 fs-h3 fw-700 text-gray-900">熱門精選</h3>
                 <div class="swiper articleSwiper">
@@ -1044,7 +1046,7 @@
 
     </div>
 
-    <!-- event tab content -->
+    <!-- 參與活動 頁籤 -->
     <div class="tab-pane" id="event" role="tabpanel" aria-labelledby="event-tab" tabindex="0">
         <!-- search bar -->
          <div class="container">
@@ -1076,13 +1078,15 @@
                       <button class="nav-link active btn btn-white me-xs" style="width: 56px;" id="online-event-tab" data-bs-toggle="pill" data-bs-target="#online-event" type="button" role="tab" aria-controls="online-event" aria-selected="true">線上</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-event nav-link btn btn-white" style="width: 56px;" id="offline-event-tab" data-bs-toggle="pill" data-bs-target="#offline-event" type="button" role="tab" aria-controls="offline-event" aria-selected="false">線下</button>
+                      <button class="nav-link nav-off-event btn btn-white" style="width: 56px;" id="offline-event-tab" data-bs-toggle="pill" data-bs-target="#offline-event" type="button" role="tab" aria-controls="offline-event" aria-selected="false">線下</button>
                     </li>
                 </ul>
+                <!-- 分隔線 -->
                 <div class="seperator bg-gray-100 border border-gray-100 me-xs" style="height: 49px; width: 1px;"></div>
+                <!-- dropdown 區域 -->
                 <ul class="nav nav-pills fs-h6 fw-700">
                     <li class="nav-item dropdown">
-                      <button class="nav-link dropdown-toggle btn btn-primary me-xs" style="width: 56px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">類別</button>
+                      <button class="nav-link event-dropdown dropdown-toggle btn btn-primary me-xs" style="width: 56px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">類別</button>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">推薦活動</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
