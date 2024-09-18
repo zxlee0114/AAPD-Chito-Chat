@@ -27,7 +27,10 @@
 
 .nav-pills .nav-link{
     &.nav-off-event.active{
-        background-color: $tertiary-400;      
+        background-color: $tertiary-400;
+        .event-dropdown{
+            background-color: $tertiary-400;
+        }      
         }
     }
 
