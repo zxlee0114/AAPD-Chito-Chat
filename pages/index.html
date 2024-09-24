@@ -308,21 +308,22 @@
             <img class="object-fit-cover rounded-2" src="../assets/images/index/map_w_icon.png" alt="附近的活動">
           </a>
           <div class="modal fade" id="mapInsert" tabindex="-1" aria-labelledby="mapInsert" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
+            <div class="modal-dialog modal-fullscreen fixed-bottom h-auto">
+              <div class="modal-content rounded-top-5">
                 <div class="modal-header">
-                  <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
-                  <h1 class="modal-title fs-h3 fw-700 mx-auto" id="mapInsert">附近的活動</h1>
                   <button type="button" class="btn-close m-0 opacity-0" data-bs-dismiss="modal" aria-label="Close" disabled></button>
+                  <h1 class="modal-title fs-h3 fw-700 mx-auto" id="mapInsert">附近的活動</h1>
+                  <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-s">
-                  <div class="location-district">
+                <div class="modal-body p-0 position-relative">
+                  <div class="position-absolute z-3">
                     <div class="position-relative">
-                      <img src="../assets/images/index/Union.svg" alt="">
+                      <p class="text-gray-300 fw-700 fs-h5 location mb-0">澀谷區</p>
+                      <span class="position-absolute top-0 end-0 bg-map-deco text-white rounded-circle fs-t8 d-flex justify-content-center align-items-center" style="width: 16px;height: 16px;">3</span>
                     </div>
-                    <p class="text-gray-300 fw-700 fs-h5 position-absolute start-50 translate-middle">澀谷區</p>
                   </div>
-                  <div class="modal-map position-relative" style="padding-top: 430px; padding-bottom: 140px;">
+                  <img src="../assets/images/index/map_modal.png" alt="map_modal" class="position-absolute">
+                  <div style="padding-top: 430px; padding-bottom: 103px;">
                     <div class="swiper mapmodalSwiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -351,7 +352,7 @@
                               
                             </div>
                         </div>
-
+  
                         <div class="swiper-slide">
                           <!-- 卡片二 -->
                           <a href="#" title="查看活動">
@@ -377,7 +378,7 @@
                             </div>
                           </a>
                         </div>
-
+  
                         <div class="swiper-slide">
                           <!-- 卡片三 -->
                           <a href="#" title="查看活動">
@@ -403,7 +404,7 @@
                             </div>
                           </a>
                         </div>
-
+  
                         <div class="swiper-slide">
                           <!-- 卡片一 -->
                           <a href="#" title="查看活動">
@@ -429,7 +430,7 @@
                             </div>
                           </a>
                         </div>
-
+  
                         <div class="swiper-slide">
                           <!-- 卡片二 -->
                           <a href="#" title="查看活動">
@@ -455,7 +456,7 @@
                             </div>
                           </a>
                         </div>
-
+  
                         <div class="swiper-slide">
                           <!-- 卡片三 -->
                           <a href="#" title="查看活動">
@@ -485,9 +486,9 @@
                     </div>
                   </div>
                   <!-- near-me-icon -->
-                   <a href="#" class="map-near-me-icon p-xs d-flex align-items-center justify-content-center position-absolute" style="width: 48px; height: 48px; bottom: 314px; right: 64px;">
-                    <span class="material-symbols-outlined" style="color: #1C1B1F;">near_me</span>
-                   </a>
+                  <a href="#" class="map-near-me-icon p-xs d-flex align-items-center justify-content-center position-absolute" style="width: 48px; height: 48px; bottom: 297px; right: 0px;">
+                  <span class="material-symbols-outlined" style="color: #1C1B1F;">near_me</span>
+                  </a>
                 </div>
               </div>
             </div>
