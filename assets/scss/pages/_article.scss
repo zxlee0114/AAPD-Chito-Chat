@@ -33,6 +33,13 @@
         }      
 }
 
+.dropdown-toggle::after {
+    content: "\e313";
+    font-family: "Material Symbols Outlined";
+    border: none;
+    vertical-align: middle;
+}
+
 .form-control{
     text-indent: 30px;
 }
