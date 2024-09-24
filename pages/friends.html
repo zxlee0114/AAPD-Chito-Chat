@@ -21,11 +21,96 @@
     </div>
 
     <div class="container text-end">
-      <p class="fw-700 fs-t6 text-gray-500 text-decoration-underline mb-0">篩選</p>
+      <a class="fw-700 fs-t6 text-gray-500 text-decoration-underline" data-bs-toggle="modal" data-bs-target="#filterModal">篩選</a>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen h-auto fixed-bottom">
+        <div class="modal-content rounded-top-5">
+          <div class="modal-header justify-content-center pb-0 border-0">
+            <h1 class="modal-title fs-h3 fw-700" id="filterModalLabel">篩選條件</h1>
+            <button type="button" class="btn-close position-absolute end-0 p-xxs me-3xl" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-l">
+            <div class="mb-l">
+              <h4 class="text-gray-400 fw-700 d-flex align-items-top ms-xxs mb-0" style="padding-bottom: 10px;">距離</h4>
+              <div class="border-top pt-s d-flex flex-wrap">
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="within-1-km" class="fs-t4">
+                    <input type="checkbox" id="within-1-km" name="within-1-km" />
+                    <span class="filterCheckbox">1km 以內</span>
+                  </label>
+                </div>
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="within-half-km" class="fs-t4">
+                    <input type="checkbox" id="within-half-km" name="within-half-km" />
+                    <span class="filterCheckbox">0.5km 以內</span>
+                  </label>
+                </div>
+                <div class="w-50 filterInput p-tiny">
+                  <label for="within-5-km" class="fs-t4">
+                    <input type="checkbox" id="within-5-km" name="within-5-km" />
+                    <span class="filterCheckbox">5km 以內</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-l">
+              <h4 class="text-gray-400 fw-700 d-flex align-items-top ms-xxs mb-0" style="padding-bottom: 10px;">身份</h4>
+              <div class="border-top pt-s d-flex flex-wrap">
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="internationalStudent" class="fs-t4">
+                    <input type="checkbox" id="internationalStudent" name="internationalStudent" />
+                    <span class="filterCheckbox">在日留學生</span>
+                  </label>
+                </div>
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="officeWorker" class="fs-t4">
+                    <input type="checkbox" id="officeWorker" name="officeWorker" />
+                    <span class="filterCheckbox">上班族</span>
+                  </label>
+                </div>
+                <div class="w-50 filterInput p-tiny">
+                  <label for="womenInJapan" class="fs-t4">
+                    <input type="checkbox" id="womenInJapan" name="womenInJapan" />
+                    <span class="filterCheckbox">在日婦女</span>
+                  </label>
+                </div>
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="workingHoliday" class="fs-t4">
+                    <input type="checkbox" id="workingHoliday" name="workingHoliday" />
+                    <span class="filterCheckbox">打工度假</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div style="margin-bottom: 56px;">
+              <h4 class="text-gray-400 fw-700 d-flex align-items-top ms-xxs mb-0" style="padding-bottom: 10px;">MBTI</h4>
+              <div class="border-top pt-s d-flex flex-wrap">
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="type-I" class="fs-t4">
+                    <input type="checkbox" id="type-I" name="type-I" />
+                    <span class="filterCheckbox">E人</span>
+                  </label>
+                </div>
+                <div class="w-50 filterInput p-tiny mb-l">
+                  <label for="type-E" class="fs-t4">
+                    <input type="checkbox" id="type-E" name="type-E" />
+                    <span class="filterCheckbox">I人</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer pt-0 pb-l px-m border-0">
+            <button type="button" class="btn btn-outline-secondary w-100 m-0" data-bs-dismiss="modal" aria-label="Close">清除</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container py-m">
-      <button type="button" class="bg-white d-flex py-m px-s rounded border border-gray-100 mb-m" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <button type="button" class="bg-white d-flex py-m px-s rounded border border-gray-100 mb-m" data-bs-toggle="modal" data-bs-target="#profileModal">
         <div class="flex-shrink-0 position-relative me-s">
           <img src="../assets/images/avatar-1.png" alt="" class="rounded-circle">
           <img src="../assets/images/flag.png" alt="" class="rounded-circle position-absolute start-0 bottom-0">
@@ -44,11 +129,11 @@
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen h-auto fixed-bottom">
           <div class="modal-content rounded-top-5">
             <div class="modal-header justify-content-center pb-0 border-0">
-              <h1 class="modal-title fs-h3 fw-700" id="exampleModalLabel">詳細資訊</h1>
+              <h1 class="modal-title fs-h3 fw-700" id="profileModalLabel">詳細資訊</h1>
               <button type="button" class="btn-close position-absolute end-0 p-xxs me-3xl" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body py-l">
@@ -79,7 +164,7 @@
               </div>
             </div>
             <div class="modal-footer pt-0 pb-l px-m border-0">
-              <a href="article.html" class="btn btn-secondary w-100 m-0">打招呼 👋🏻</a>
+              <a href="chatRoom.html" class="btn btn-secondary w-100 m-0">打招呼 👋🏻</a>
             </div>
           </div>
         </div>

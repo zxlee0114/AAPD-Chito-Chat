@@ -38,3 +38,51 @@
     box-shadow: none !important;
 }
 
+.filterCheckbox {
+    padding-left: 36px;
+    position: relative;
+    // width: 24px;
+    // height: 24px;
+    // border: 1px solid $neutral-300;
+    // border-radius: $border-radius-xs;
+}
+
+.filterCheckbox::before{
+    content:"";
+    left: 0px;
+    top: -1px;
+    position: absolute;
+    border: 1px solid $neutral-300;
+    border-radius: $border-radius-xs;
+    width: 24px;
+    height: 24px;
+}
+.filterCheckbox::after {
+    display:none; //預設為不可視狀態
+    font-family: 'Material Symbols Outlined';
+    content: "\e5ca";
+    font-size: 24px;
+    line-height: 1;
+    color: white;
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    border-radius: $border-radius-xs;
+}
+
+.filterInput {
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox]:checked+.filterCheckbox::before{
+        display:none; //點擊後將框框設為不可視
+    }
+    input[type=checkbox]:checked+.filterCheckbox::after{
+        display:block; //點擊後將勾勾設為可視
+    }
+}
+
+
