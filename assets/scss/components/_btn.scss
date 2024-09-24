@@ -33,8 +33,9 @@
 .btn-secondary{
     color: $white;
     background: $secondary-600;
-    &:active{
-        background: $secondary-800;
+    &:hover.btn , &:focus.btn , &:focus-visible.btn , &:focus-visible.btn {
+        color: $white;
+        background: $secondary-600;
     }
 }
 
