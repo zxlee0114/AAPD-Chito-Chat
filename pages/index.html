@@ -179,8 +179,8 @@
                 <h5 class="fs-h5 py-tiny px-xxs bg-primary-light text-white rounded-tiny">進</h5>
                 <h5 class="fs-h5 py-tiny px-xxs bg-primary-light text-white rounded-tiny">度</h5>
               </div>
-              <div class="course-progress text-primary rounded-circle mt-xs mb-xl">
-                <p class="course-progress-number">0<span class="course-progress-percentage">%</span></p>
+              <div class="course-progress text-primary rounded-circle d-flex justify-content-center align-items-center">
+                <p class="course-progress-number mb-0 ms-xxs">0<span class="course-progress-percentage">%</span></p>
               </div>            
             </section>
           </div>
@@ -596,6 +596,10 @@
 
 
     <%- include('./layout/footer', {page: "home"}); -%>
+
+    <div class="home">
+    <%- include('./layout/footer'); -%>
+    </div>
 
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
