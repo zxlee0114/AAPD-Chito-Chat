@@ -309,20 +309,29 @@
           </a>
           <div class="modal fade" id="mapInsert" tabindex="-1" aria-labelledby="mapInsert" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen fixed-bottom h-auto">
+                                    <!-- modal滿版 / 置底 / 自適應高度 -->
               <div class="modal-content rounded-top-5">
+                                        <!-- 圓角 -->
                 <div class="modal-header">
                   <button type="button" class="btn-close m-0 opacity-0" data-bs-dismiss="modal" aria-label="Close" disabled></button>
                   <h1 class="modal-title fs-h3 fw-700 mx-auto" id="mapInsert">附近的活動</h1>
                   <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
                 <div class="modal-body p-0 position-relative">
+
+                  <!-- 定位 -->
                   <div class="position-absolute z-3">
                     <div class="position-relative">
                       <p class="text-gray-300 fw-700 fs-h5 location mb-0">澀谷區</p>
                       <span class="position-absolute top-0 end-0 bg-map-deco text-white rounded-circle fs-t8 d-flex justify-content-center align-items-center" style="width: 16px;height: 16px;">3</span>
                     </div>
                   </div>
+
+                  <!-- 定位 -->
                   <img src="../assets/images/index/map_modal.png" alt="map_modal" class="position-absolute">
+
+                  <!-- 主要內容 (padding 推出內容高度，並定位) -->
                   <div style="padding-top: 430px; padding-bottom: 103px;">
                     <div class="swiper mapmodalSwiper">
                       <div class="swiper-wrapper">
@@ -485,10 +494,13 @@
                       </div>
                     </div>
                   </div>
+
                   <!-- near-me-icon -->
+                  <!-- 定位 -->
                   <a href="#" class="map-near-me-icon p-xs d-flex align-items-center justify-content-center position-absolute" style="width: 48px; height: 48px; bottom: 297px; right: 0px;">
                   <span class="material-symbols-outlined" style="color: #1C1B1F;">near_me</span>
                   </a>
+
                 </div>
               </div>
             </div>
