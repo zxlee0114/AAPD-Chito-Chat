@@ -27,7 +27,7 @@ const mapmodalSwiper = new Swiper(".mapmodalSwiper", {
   centeredSlides: true,
   loop: true,
   slidesPerView: 1.1,
-  spaceBetween: 4, 
+  spaceBetween: 8, 
 });
 
 const friendSwiper = new Swiper(".friendSwiper", {
