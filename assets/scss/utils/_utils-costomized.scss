@@ -148,6 +148,23 @@ $utilities: map-merge(
                 pill: var(--#{$prefix}border-radius-pill)
              )
          ),
+         "rounded-bottom-start": (
+          responsive: true,
+          property: border-bottom-left-radius,
+          class: rounded-bottom-start,
+          values: (
+              null: $border-radius-xs,    // 8px
+              0: 0,                       // 0px
+              1: $border-radius-xxs,      // 4px
+              2: $border-radius-xs,       // 8px
+              3: $border-radius-sm,       // 12px
+              4: $border-radius-md,       // 16px
+              5: $border-radius-lg,       // 20px
+              6: $border-radius-xl,       // 24px
+              circle: 50%,
+              pill: var(--#{$prefix}border-radius-pill)
+           )
+       ),
          
         "border-opacity": (
             responsive: true,
