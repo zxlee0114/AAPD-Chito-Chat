@@ -44,7 +44,10 @@ const articleSwiper = new Swiper(".articleSwiper", {
       delay: 2000,
     },
     pagination: {
-      el: ".articleSwiper-pagination",
+      el: ".swiper-pagination",
+      type: "bullets",
+      bulletActiveClass: "swiper-pagination-bullet-active",
+      clickable: true,
     },
 });
 
