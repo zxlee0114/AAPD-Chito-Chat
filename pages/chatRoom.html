@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>找朋友</title>
+  </head>
+  <body class="header-bg-friends" style="padding-top: 54px; padding-bottom: 75px;">
+    <%- include('./layout/header-friends'); -%>
+
+    <div class="container py-s d-flex align-items-center">
+      <a href="myChat.html">
+        <span class="mgc_left_line fs-t2"></span>
+      </a>
+      <h2 class="fw-700 fs-h3 text-secondary-darker mb-0 ms-m">雨森せりな</h2>
+      <a href="myChat.html" class="position-relative ms-auto me-s">
+        <img src="../assets/images/icon/chat.svg" alt="">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-compl-500 chat-hint">1 <span class="visually-hidden">unread messages</span></span>
+      </a>
+    </div>
+    <div class="container py-s" style="padding: 0 16px;">
+      <div class="mb-l">
+        <%- include('./layout/chatRoom-Elly'); -%>
+        <div style="padding-left: 34px;">
+          <p class="fs-t6 bg-white rounded-end-3 rounded-bottom-start-3 mb-0" style="padding: 10px;">嗨我是Elly! 我看你住附近～你何時來的呀！</p>
+        </div>
+      </div>
+
+      <div class="mb-l">
+        <div style="padding-left: 52px;">
+          <p class="fs-t6 bg-secondary-50 rounded-start-3 rounded-bottom-end-3 mb-0" style="padding: 10px;">嗨我是Yi Chun我最近剛搬來日本，這裡的生活節奏和我之前的國家完全不同，但我喜歡這樣的改變。</p>
+        </div>
+      </div>
+
+      <div>
+        <%- include('./layout/chatRoom-Elly'); -%>
+        <div style="padding-left: 34px;">
+          <p class="fs-t6 bg-white rounded-end-3 rounded-bottom-start-3 mb-0" style="padding: 10px;">喔喔～那你遇到什麼困難或是有趣的事情？向我昨天去吃飯的時候對方語速太快我聽不懂，一直請對方重複說，有時候還挺尷尬的XDDD但~每天進步一點點，也漸漸能適應的</p>
+        </div>
+      </div>
+    </div>
+    
+    
+    <%- include('./layout/footer-chatRoom'); -%>
+    
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 
-.btn{
+.btn {
     padding: 8px;    
     border-radius: $border-radius-xs;
     text-align: center;
@@ -7,7 +7,7 @@
     line-height: 22px;
 }
 
-.btn-outline{
+.btn-outline {
     padding: 8px;
     border-width: 1px;
     border-style: solid;
@@ -16,7 +16,7 @@
     line-height: 20px;
 }
 
-.btn-primary{
+.btn-primary {
     color: $white;
     background: $primary;
     &:active{
@@ -24,13 +24,13 @@
     }
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
     color: $primary;
     background: $white;
     border-color: $primary;
 }
 
-.btn-secondary{
+.btn-secondary {
     color: $white;
     background: $secondary-600;
     &:hover.btn , &:focus.btn , &:focus-visible.btn , &:focus-visible.btn {
@@ -39,7 +39,13 @@
     }
 }
 
-.btn-tertiary{
+.btn-outline-secondary {
+    color: $secondary-600;
+    background: $white;
+    border-color: $secondary-600;
+}
+
+.btn-tertiary {
     color: $white;
     background: $tertiary;
     &:active{
@@ -52,12 +58,12 @@
     background: $complementary-400;
 }
 
-.btn-gray{
+.btn-gray {
     color: $white;
     background: $gray-300;
 }
 
-.btn-white{
+.btn-white {
     color: $gray-300;
     background: $white;
 }

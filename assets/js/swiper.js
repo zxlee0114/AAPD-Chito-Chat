@@ -28,6 +28,7 @@ const mapmodalSwiper = new Swiper(".mapmodalSwiper", {
   loop: true,
   slidesPerView: 1.1,
   spaceBetween: 8, 
+  initialSlide :3, //起始頁設定，從0開始
 });
 
 const friendSwiper = new Swiper(".friendSwiper", {
