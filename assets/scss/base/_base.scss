@@ -39,3 +39,9 @@ a{
         }
     }
 }
+
+[class^='mgc_']::before,
+[class*=' mgc_']::before {
+  color: inherit !important;
+}
+// 對所有類名以“mgc_”開頭或包含“ mgc_”的::before偽元素的樣式，它將這些元素的文字顏色設置為繼承自其父元素的顏色
