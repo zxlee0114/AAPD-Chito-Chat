@@ -5,6 +5,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import 'swiper/css/bundle';
 
 // import Swiper JS
-import './assets/js/swiper.js'
+import './assets/js/swiper.js';
+
+import './assets/js/article_tab.js';
 
 console.log("Hello world!");
