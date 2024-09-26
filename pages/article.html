@@ -1133,7 +1133,6 @@
              <form class="article-search-input position-relative my-m" role="search">
                  <span class="text-gray-500 material-symbols-outlined position-absolute top-50 translate-middle-y" style="left: 10px; width: 20px; height: 20px;">search</span>
                  <input class="form-control d-inline-block" type="search" placeholder="搜尋" aria-label="Search">
-                 <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
              </form>
          </div>
 
@@ -1153,64 +1152,122 @@
         <!-- inpage navbar -->
         <div class="container">
             <section class="event-selector d-flex justify-content-between align-items-center my-m">
-                <ul class="nav nav-pills fs-h6 fw-700 p-xs border border-gray-100 rounded-2 me-xs" id="pills-tab" role="tablist">
+                <ul class="nav nav-pills fs-h6 fw-700 p-xs border border-gray-100 rounded-2 me-xs flex-nowrap" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active nav-on-event btn btn-white me-xs" style="width: 56px;" id="online-event-tab" data-bs-toggle="pill" data-bs-target="#online-event" type="button" role="tab" aria-controls="online-event" aria-selected="true">線上</button>
+                      <button class="nav-link active nav-on-event btn btn-white me-xs" style="width: 56px;" id="online-event-tab" data-bs-toggle="pill" data-bs-target="#online-event"
+                      type="button" role="tab" aria-controls="online-event" aria-selected="true">線上</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link nav-off-event btn btn-white" style="width: 56px;" id="offline-event-tab" data-bs-toggle="pill" data-bs-target="#offline-event" type="button" role="tab" aria-controls="offline-event" aria-selected="false">線下</button>
+                      <button class="nav-link nav-off-event btn btn-white" style="width: 56px;" id="offline-event-tab" data-bs-toggle="pill" data-bs-target="#offline-event"
+                      type="button" role="tab" aria-controls="offline-event" aria-selected="false">線下</button>
                     </li>
                 </ul>
                 <!-- 分隔線 -->
                 <div class="seperator bg-gray-100 border border-gray-100 me-xs" style="height: 49px; width: 1px;"></div>
-                <!-- dropdown 區域 -->
-                <ul class="nav nav-pills fs-h6 fw-700">
-                    <li class="nav-item dropdown">
-                      <button class="event-dropdown-1 nav-link dropdown-toggle btn btn-primary me-xs" style="width: 56px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">類別</button>
-                      <div class="dropdown-menu" style="width: 714px;">
-                        <div class="dropdown-header d-flex justify-content-between align-items-center">
-                          <button type="button" class="btn-close m-0 opacity-0" data-bs-dismiss="dropdown" aria-label="Close" disabled></button>
-                          <h3 class="fs-h3 fw-700 text-gray-900 mx-auto mb-0">篩選條件</h3>
-                          <button type="button" class="btn-close m-0" data-bs-dismiss="dropdown" aria-label="Close"></button>
-                        </div>
-                        <div class="dropdown-body">
-                          <h3 class="fs-h3 fw-700 text-gray-500">類別</h3>
-                          <span><hr class="dropdown-divider"></span>
-
-                        </div>
-                       
-                        <!-- <li><a class="dropdown-item" href="#">推薦活動</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li> -->
-                      </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <button class="event-dropdown-2 nav-link dropdown-toggle btn btn-primary me-xs" style="width: 56px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">區域</button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">推薦活動</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Separated link</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <button class="event-dropdown-3 nav-link dropdown-toggle btn btn-primary me-xs" style="width: 56px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">時間</button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">推薦活動</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Separated link</a></li>
-                        </ul>
-                    </li>
+                <!-- 活動類型按鈕 -->
+                <ul class="nav nav-pills flex-nowrap">
+                  <li class="nav-item">
+                    <a data-bs-toggle="modal" data-bs-target="#eventModal"
+                    class="btn btn-primary selector-class me-xs text-nowrap fs-h6 fw-700" style="width: 56px;">
+                    類別<span class="material-symbols-outlined fs-t6 align-middle ms-xxs">
+                      keyboard_arrow_down
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-bs-toggle="modal" data-bs-target="#eventModal"
+                    class="btn btn-primary selector-district me-xs text-nowrap fs-h6 fw-700" style="width: 56px;">
+                    區域<span class="material-symbols-outlined fs-t6 align-middle ms-xxs">
+                      keyboard_arrow_down
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a data-bs-toggle="modal" data-bs-target="#eventModal"
+                    class="btn btn-primary selector-time me-xs text-nowrap fs-h6 fw-700" style="width: 56px;">
+                    時間<span class="material-symbols-outlined fs-t6 align-middle ms-xxs">
+                      keyboard_arrow_down
+                      </span>
+                    </a>
+                  </li>
                 </ul>
+                <!-- 活動類型選擇 modal -->
+                <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+                  <div class="modal-dialog fixed-bottom">
+                    <div class="modal-content px-m pt-m pb-xl mx-auto rounded-3 h-auto" style="width: 375px;">
+                      <!-- modal-header -->
+                      <div class="modal-header border-0 mb-l">
+                        <button type="button" class="btn-close m-0 opacity-0" data-bs-dismiss="modal" aria-label="Close" disabled></button>
+                        <h3 class="modal-title fs-h3 fw-700 text-gray-900 mx-auto" id="eventModal">篩選條件</h3>
+                        <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <!-- modal-body -->
+                      <div class="modal-body mb-4xl">
+                        <h4 class="fs-h3 fw-700 text-gray-500 mt-m mb-0">類別</h4>
+                        <hr/>
+                        <div class="d-flex flex-wrap justify-content-between pt-s">
+                          <div class="form-check py-xxs pe-xxs d-flex align-items-center" style="width: 128px;">
+                            <input class="form-check-input me-xs text-gray-500" type="checkbox" value="language" id="language" style="width: 24px; height: 24px;">
+                            <label class="form-check-label fs-t4 text-gray-500" style="line-height: 25px;" for="language">
+                              語言
+                            </label>
+                          </div>
+                          <div class="form-check py-xxs pe-xxs d-flex align-items-center" style="width: 128px;">
+                            <input class="form-check-input me-xs text-gray-500" type="checkbox" value="culture" id="culture" style="width: 24px; height: 24px;">
+                            <label class="form-check-label fs-t4 text-gray-500" style="line-height: 25px;" for="culture">
+                              文化
+                            </label>
+                          </div>
+                          <div class="form-check py-xxs pe-xxs d-flex align-items-center" style="width: 128px;">
+                            <input class="form-check-input me-xs text-gray-500" type="checkbox" value="studyabroad" id="studyabroad" style="width: 24px; height: 24px;">
+                            <label class="form-check-label fs-t4 text-gray-500" style="line-height: 25px;" for="studyabroad">
+                              留學
+                            </label>
+                          </div>
+                          <div class="form-check py-xxs pe-xxs d-flex align-items-center" style="width: 128px;">
+                            <input class="form-check-input me-xs text-gray-500" type="checkbox" value="parttime" id="parttime" style="width: 24px; height: 24px;">
+                            <label class="form-check-label fs-t4 text-gray-500" style="line-height: 25px;" for="parttime">
+                              打工
+                            </label>
+                          </div>
+                          <div class="form-check py-xxs pe-xxs d-flex align-items-center" style="width: 128px;">
+                            <input class="form-check-input me-xs text-gray-500" type="checkbox" value="job" id="job" style="width: 24px; height: 24px;">
+                            <label class="form-check-label fs-t4 text-gray-500" style="line-height: 25px;" for="job">
+                              就職
+                            </label>
+                          </div>
+                          <div class="form-check py-xxs pe-xxs d-flex align-items-center" style="width: 128px;">
+                            <input class="form-check-input me-xs text-gray-500" type="checkbox" value="visa" id="visa" style="width: 24px; height: 24px;">
+                            <label class="form-check-label fs-t4 text-gray-500" style="line-height: 25px;" for="visa">
+                              簽證
+                            </label>
+                          </div>
+                          <div class="form-check py-xxs pe-xxs d-flex align-items-center" style="width: 128px;">
+                            <input class="form-check-input me-xs text-gray-500" type="checkbox" value="pet" id="pet" style="width: 24px; height: 24px;">
+                            <label class="form-check-label fs-t4 text-gray-500" style="line-height: 25px;" for="pet">
+                              寵物
+                            </label>
+                          </div>
+                          <div class="form-check py-xxs pe-xxs d-flex align-items-center" style="width: 128px;">
+                            <input class="form-check-input me-xs text-gray-500" type="checkbox" value="festival" id="festival" style="width: 24px; height: 24px;">
+                            <label class="form-check-label fs-t4 text-gray-500" style="line-height: 25px;" for="festival">
+                              慶典
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-primary selector-modal-filled w-100 mb-m" data-bs-dismiss="modal">確定篩選</button>
+                        <button type="button" class="btn btn-outline-primary selector-modal-outline fw-400 w-100 mb-m">清除</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </section>
         </div>
-        <!-- 線上活動 tab 內容 -->
+        <!-- 活動 tab 內容 -->
             <div class="tab-content" id="pills-tabContent">
+              <!-- 線上活動 -->
                 <div class="tab-pane fade show active" id="online-event" role="tabpanel" aria-labelledby="online-event-tab" tabindex="0">
                     <div class="container">
                         <div class="d-flex justify-content-between align-items-center">
@@ -1218,7 +1275,6 @@
                             <button type="button" class="fs-t6 text-gray-900 border-0 opacity-50 mb-0" disabled>重置篩選<span class="material-symbols-outlined fs-t6 ms-xxs align-middle">undo</span></button>
                         </div>
                     </div>
-
                     <div class="container">
                         <ul class="event-list list-unstyled my-m">
                             <!-- 活動一 -->
@@ -1342,11 +1398,14 @@
                                 </ul>
                               </li>
                         </ul>
-                    </div>
-                    
+                    </div>                  
+                     <a class="deco-online p-s fs-h4 fw-700 text-white rounded-2 position-fixed start-50 translate-middle-x" style="bottom: 115px;" href="#">
+                       <span class="material-symbols-outlined me-xxs align-bottom">map</span>
+                       地圖
+                     </a>
                 </div>
+              <!-- 線下活動 -->
                 <div class="tab-pane fade" id="offline-event" role="tabpanel" aria-labelledby="offline-event-tab" tabindex="0">
-                    <!-- 線下活動 -->
                     <div class="container">
                         <div class="d-flex justify-content-between align-items-center">
                             <h3 class="fs-h3 fw-700 text-gray-900 mb-0">全部活動</h3>
@@ -1477,9 +1536,11 @@
                                 </ul>
                               </li>
                         </ul>
-                    </div>
-
-                    
+                      </div>
+                        <a class="deco-offline p-s fs-h4 fw-700 text-white rounded-2 position-fixed start-50 translate-middle-x" style="bottom: 115px;" href="#">
+                          <span class="material-symbols-outlined me-xxs align-bottom">map</span>
+                          地圖
+                        </a>
                 </div>
         </div>
   </div>

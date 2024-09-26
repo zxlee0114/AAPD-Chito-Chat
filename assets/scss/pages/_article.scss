@@ -28,16 +28,18 @@
 .nav-pills .nav-link{ 
         &.nav-off-event.active{
         background-color: $tertiary-400;}
-        .event-dropdown{
-            background-color: $tertiary-400;
-        }      
 }
 
-.dropdown-toggle::after {
-    content: "\e313";
-    font-family: "Material Symbols Outlined";
-    border: none;
-    vertical-align: middle;
+.nav-off-event:hover{
+    color: $tertiary-400;
+}
+
+.modal.fade .modal-dialog {
+    transform: translateY(100%);
+}
+  
+.modal.show .modal-dialog {
+    transform: translateY(0%);
 }
 
 .form-control{
@@ -56,10 +58,33 @@
     line-height: 22px; /* 137.5% */
 }
 
-.offline-active{
-    background-color: $tertiary-400;
+.deco-online{
+    background-color: #2F97C8;
+    &:hover{
+        background-color: #40A8D9;
+    }
+    &:active,
+    &:focus{
+        background-color: #1B6189;
+    }
 }
 
-.online-active{
-    background-color: $primary;
+.deco-offline{
+    background-color:#86C166;
+    &:hover{
+        background-color:#97D277;
+    }
+    &:active,
+    &:focus{
+        background-color: #416B2A;;
+    }
 }
+
+
+// .offline-active{
+//     background-color: $tertiary-400;
+// }
+
+// .online-active{
+//     background-color: $primary;
+// }
