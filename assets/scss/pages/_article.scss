@@ -34,12 +34,38 @@
     color: $tertiary-400;
 }
 
+.selector-class:hover{
+    filter: brightness(1.2);
+    &:active,
+    &:focus{
+        filter: brightness(0.9);
+    }
+}
+.selector-district:hover{
+    filter: brightness(1.2);
+    &:active,
+    &:focus{
+        filter: brightness(0.9);
+    }
+}
+.selector-time:hover{
+    filter: brightness(1.2);
+    &:active,
+    &:focus{
+        filter: brightness(0.9);
+    }
+}
+
 .modal.fade .modal-dialog {
     transform: translateY(100%);
 }
   
 .modal.show .modal-dialog {
     transform: translateY(0%);
+}
+
+.selector-modal-outline:hover{
+    background-color: $neutral-100;
 }
 
 .form-control{
@@ -59,24 +85,24 @@
 }
 
 .deco-online{
-    background-color: #2F97C8;
+    background-color: $primary;
     &:hover{
         background-color: #40A8D9;
     }
     &:active,
     &:focus{
-        background-color: #1B6189;
+        background-color: $primary-900;
     }
 }
 
 .deco-offline{
-    background-color:#86C166;
+    background-color:$tertiary-400;
     &:hover{
         background-color:#97D277;
     }
     &:active,
     &:focus{
-        background-color: #416B2A;;
+        background-color: $tertiary-700;
     }
 }
 
