@@ -30,8 +30,22 @@
         background-color: $tertiary-400;}
 }
 
+.nav-on-event:hover{
+    color:$primary;
+    background-color: $primary-100;
+    &:active,
+    &:focus{
+        background-color: $primary-700;
+    }
+}
+
 .nav-off-event:hover{
     color: $tertiary-400;
+    background-color: $tertiary-100;
+    &:active,
+    &:focus{
+        background-color: $tertiary-700;
+    }
 }
 
 .selector-class:hover{
