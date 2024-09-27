@@ -35,48 +35,6 @@ const onlineColor = '#2F97C8';
 offline.addEventListener("click", () => setStyles(elements, offlineColor));
 online.addEventListener("click", () => setStyles(elements, onlineColor));
 
-//祖媽法的又臭又長程式碼：（↑ AI 簡化過的版本）
-// offline.addEventListener("click", function(e){
-//     selectorClass.style.backgroundColor = '#86C166';
-//     selectorClass.style.borderColor = '#86C166';
-// });
-// offline.addEventListener("click", function(e){
-//     selectorDistrict.style.backgroundColor = '#86C166';
-//     selectorDistrict.style.borderColor = '#86C166';
-// });
-// offline.addEventListener("click", function(e){
-//     selectorTime.style.backgroundColor = '#86C166';
-//     selectorTime.style.borderColor = '#86C166';
-// });
-// offline.addEventListener('click', function(e){
-//     selectorModalFilled.style.backgroundColor = '#86C166';
-//     selectorModalFilled.style.borderColor = '#86C166';
-// });
-// offline.addEventListener('click', function(e){
-//     selectorModalOutline.style.color = '#86C166';
-//     selectorModalOutline.style.borderColor = '#86C166';
-// });
-
-// online.addEventListener("click", function(e){
-//     selectorClass.style.backgroundColor = '#2F97C8';
-//     selectorClass.style.borderColor = '#2F97C8';
-// });
-// online.addEventListener("click", function(e){
-//     selectorDistrict.style.backgroundColor = '#2F97C8';
-//     selectorDistrict.style.borderColor = '#2F97C8';
-// });
-// online.addEventListener("click", function(e){
-//     selectorTime.style.backgroundColor = '#2F97C8';
-//     selectorTime.style.borderColor = '#2F97C8';
-// });
-// online.addEventListener('click', function(e){
-//     selectorModalFilled.style.backgroundColor = '#2F97C8';
-//     selectorModalFilled.style.borderColor = '#2F97C8';
-// });
-// online.addEventListener('click', function(e){
-//     selectorModalOutline.style.color = '#2F97C8';
-//     selectorModalOutline.style.borderColor = '#2F97C8';
-// });
 
 //活動篩選 modal
 $(window).ready(() => {
