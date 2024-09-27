@@ -11,6 +11,10 @@
     border: 1px solid var(--Base-Neutral-100, #E7E7E7);
     background: #FFF;
   }
+  transition: 0.3 ease-out;
+  &:hover{
+    filter: brightness(1.03);
+  }
 }
 
 .course-progress{
