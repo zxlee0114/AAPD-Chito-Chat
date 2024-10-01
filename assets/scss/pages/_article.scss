@@ -80,6 +80,10 @@
 
 .selector-modal-outline:hover{
     background-color: $neutral-100;
+    &:active,
+    &:focus{
+        background-color: $neutral-300;
+    }
 }
 
 .form-control{
