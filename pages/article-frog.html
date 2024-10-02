@@ -9,19 +9,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <body style="width: 375px; padding-top: 54px; padding-bottom: 75px;">
     <%- include('./layout/header-tertiary-plain'); -%> 
-    <section class="article-frog-banner">
+    <section class="article-frog-banner position-relative">
       <img src="../assets/images/article/article-frog/article-frog-banner.png" alt="蛙化現象 封面圖">
-      <div class="img-top-btn d-flex justify-content-between">
-        <div class="icon-btn-bg">
+      <div class="img-top-btn p-s d-flex gap-xs justify-content-between position-absolute top-0" style="width: 375px;">
+        <a class="icon-btn-bg" href="#" title="回上頁">
           <span class="material-symbols-outlined icon-btn" >arrow_back_ios_new</span>
-        </div>
+        </a>
         <div class="btn-right">
-          <div class="icon-btn-bg">
-            <span class="material-symbols-outlined icon-btn" >favorite</span>
-          </div>
-          <div class="icon-btn-bg">
-            <span class="material-symbols-outlined icon-btn" >share</span>
-          </div>
+          <a class="icon-btn-bg" href="#" title="加入最愛">
+            <span class="material-symbols-outlined icon-btn">favorite</span>
+          </a>
+          <a class="icon-btn-bg" href="#" title="分享">
+            <span class="material-symbols-outlined icon-btn">share</span>
+          </a>
         </div>
       </div>
 
