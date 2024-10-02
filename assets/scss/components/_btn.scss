@@ -1,3 +1,21 @@
+//文章、活動區塊上的按鈕
+.icon-btn-bg{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 1000px;
+    background: rgba(0,0,0,0.5);
+    &:hover{
+        background: rgba(0,0,0,0.7);
+    }
+}
+.icon-btn{
+    color: $white;
+    font-size: 20px;
+    line-height: 1;
+}
 
 .btn {
     padding: 8px;    
