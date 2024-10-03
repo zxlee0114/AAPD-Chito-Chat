@@ -8,5 +8,6 @@ import 'swiper/css/bundle';
 import './assets/js/swiper.js';
 
 import './assets/js/article_tab.js';
+import './assets/js/frog.js';
 
 console.log("Hello world!");

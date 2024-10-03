@@ -46,3 +46,12 @@ const show = () => {
 	$('#myModal').modal('show');
 }
 
+// //回上頁
+// const backButtons = document.querySelectorAll('.back-button');
+
+// backButton.forEach(button =>{
+//     button.addEventListener('click', function(event){
+//         event.preventDefault(); // 防止默認的導航行為
+//         window.history.back();
+//     });
+// });
