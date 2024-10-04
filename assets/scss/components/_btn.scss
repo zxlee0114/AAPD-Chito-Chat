@@ -101,3 +101,10 @@
     border-color: $primary;
   }
 }
+
+.btn-submit {
+  &:hover,&:active, &:focus ,&:focus-visible {
+    color: $primary !important;
+    background: $white !important;
+  }
+}
