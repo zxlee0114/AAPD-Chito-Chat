@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>個人頁面</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script type="module" crossorigin src="/AAPD-Chito-Chat/assets/main-b1c8bb9c.js"></script>
+  <link rel="stylesheet" href="/AAPD-Chito-Chat/assets/main-3d8f283f.css">
+</head>
+<body class="header-bg-bio" style="padding-top: 54px; padding-bottom: 75px;">
+  <section class="fixed-top" style="width: 375px; margin: 0 auto;">
+  <div class="header-bio-bg-top">
+    <div class="header-top d-flex justify-content-between">
+      <time class="header-time-text">9:41</time>
+      <img src="/AAPD-Chito-Chat/assets/mobile_top_icon-6c2fde69.svg" alt="mobile simulated diagram">
+    </div>
+  </div>
+</section>   
+
+  <div class="container py-xs d-flex justify-content-between align-items-center">
+    <a href="bio-info.html">
+      <img src="/AAPD-Chito-Chat/assets/back-330bedd9.svg" alt="">
+    </a>
+    <h2 class="fw-700 fs-h2 mb-0">修改個人資訊</h2>
+    <div></div>
+  </div>
+
+  <div class="container">
+    <div class="text-center position-relative pt-m pb-s border-gray-100" style="border-radius: 26.621px;">
+      <img src="/AAPD-Chito-Chat/assets/pic-5bc36f87.svg" alt="" style="width: 196px;height: 196px;">
+      <a href="#" class="fs-t6 position-absolute start-50 translate-middle-x py-s border-gray-100" style="bottom: 12px; width: 196px;border-bottom-left-radius:26.621px;border-bottom-right-radius:26.621px;background: rgba(231, 231, 231, 0.50);">編輯</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <ul class="list-unstyled mb-0">
+      <li class="mb-l">
+        <h3 class="fs-t6 text-gray-800 fw-700 mb-xxs">姓名</h3>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control text-start fs-t6 py-xs" value="Yi Chun" aria-label="Yi Chun" aria-describedby="button-addon" style="text-indent: 0;">
+          <button class="btn btn-outline-primary btn-submit border-start-0 border-gray-100 fs-t7 px-s" type="button" id="button-addon">修改</button>
+        </div>
+      </li>
+      <li class="mb-l">
+        <h3 class="fs-t6 text-gray-800 fw-700 mb-xxs">國家</h3>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control text-start fs-t6 py-xs" value="台灣" aria-label="Yi Chun" aria-describedby="button-addon" style="text-indent: 0;">
+          <button class="btn btn-outline-primary btn-submit border-start-0 border-gray-100 fs-t7 px-s" type="button" id="button-addon">修改</button>
+        </div>
+      </li>
+      <li>
+        <h3 class="fs-t6 text-gray-800 fw-700 mb-xxs">我的標籤</h3>
+        <div class="card rounded-3 border-gray-100 pt-s pb-l px-m">
+          <div class="level mb-m">
+            <h4 class="fs-t6 text-gray-500 fw-700 mb-xs">我的程度</h4>
+            <div class="level-radioBtn">
+              <input class="level-radioBtn-input" type="radio" id="Beginner" name="level" checked>
+              <label class="level-radioBtn-label tag tag-tertiary text-center" for="Beginner">初心者</label>
+              
+              <input class="level-radioBtn-input" type="radio" id="Intermediate" name="level">
+              <label class="level-radioBtn-label tag tag-tertiary text-center" for="Intermediate">進階者</label>
+
+              <input class="level-radioBtn-input" type="radio" id="High-intermediate" name="level">
+              <label class="level-radioBtn-label tag tag-tertiary text-center" for="High-intermediate">準高階</label>
+
+              <input class="level-radioBtn-input" type="radio" id="Advanced" name="level">
+              <label class="level-radioBtn-label tag tag-tertiary text-center" for="Advanced">高階者</label>
+
+              <input class="level-radioBtn-input" type="radio" id="Professional" name="level">
+              <label class="level-radioBtn-label tag tag-tertiary text-center" for="Professional">日語通</label>
+            </div>
+          </div>
+      
+          <div class="role mb-m">
+            <h4 class="fs-t6 text-gray-500 fw-700 mb-xs">我的身份</h4>
+            <div class="role-radioBtn">
+              <input class="role-radioBtn-input" type="radio" id="internationalStudent" name="role" checked>
+              <label class="role-radioBtn-label tag tag-primary text-center" for="internationalStudent">留學生</label>
+              
+              <input class="role-radioBtn-input" type="radio" id="officeWorkers" name="role">
+              <label class="role-radioBtn-label tag tag-primary text-center" for="officeWorkers">上班族</label>
+
+              <input class="role-radioBtn-input" type="radio" id="homemaker" name="role">
+              <label class="role-radioBtn-label tag tag-primary text-center" for="homemaker">全職媽媽</label>
+
+              <input class="role-radioBtn-input" type="radio" id="workplaceRookie" name="role">
+              <label class="role-radioBtn-label tag tag-primary text-center" for="workplaceRookie">職場菜鳥</label>
+            </div>
+          </div>
+      
+          <div class="MBTI">
+            <h4 class="fs-t6 text-gray-500 fw-700 mb-xs">MBTI</h4>
+            <div class="MBTI-radioBtn">
+              <input class="MBTI-radioBtn-input" type="radio" id="ISTJ" name="MBTI" checked>
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="ISTJ">ISTJ</label>
+            
+              <input class="MBTI-radioBtn-input" type="radio" id="ISFJ" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="ISFJ">ISFJ</label>
+              
+              <input class="MBTI-radioBtn-input" type="radio" id="INFJ" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="INFJ">INFJ</label>
+      
+              <input class="MBTI-radioBtn-input" type="radio" id="INTJ" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="INTJ">INTJ</label>
+      
+              <input class="MBTI-radioBtn-input" type="radio" id="ISTP" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="ISTP">ISTP</label>
+      
+              <input class="MBTI-radioBtn-input" type="radio" id="ISFP" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="ISFP">ISFP</label>
+      
+              <input class="MBTI-radioBtn-input" type="radio" id="INFP" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="INFP">INFP</label>
+      
+              <input class="MBTI-radioBtn-input" type="radio" id="INTP" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="INTP">INTP</label>
+      
+              <input class="MBTI-radioBtn-input" type="radio" id="ESTP" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="ESTP">ESTP</label>
+              
+              <input class="MBTI-radioBtn-input" type="radio" id="ESFP" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="ESFP">ESFP</label>
+              
+              <input class="MBTI-radioBtn-input" type="radio" id="ENFP" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="ENFP">ENFP</label>
+              
+              <input class="MBTI-radioBtn-input" type="radio" id="ENTP" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="ENTP">ENTP</label>
+              
+              <input class="MBTI-radioBtn-input" type="radio" id="ESTJ" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="ESTJ">ESTJ</label>
+              
+              <input class="MBTI-radioBtn-input" type="radio" id="ESFJ" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="ESFJ">ESFJ</label>
+              
+              <input class="MBTI-radioBtn-input" type="radio" id="ENFJ" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="ENFJ">ENFJ</label>
+              
+              <input class="MBTI-radioBtn-input" type="radio" id="ENTJ" name="MBTI">
+              <label class="MBTI-radioBtn-label tag tag-secondary text-center" for="ENTJ">ENTJ</label>
+              
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
