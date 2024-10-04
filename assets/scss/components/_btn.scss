@@ -1,87 +1,110 @@
 //文章、活動區塊上的按鈕
 .icon-btn-bg{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 1000px;
-    background: rgba(0,0,0,0.5);
-    &:hover{
-        background: rgba(0,0,0,0.7);
-    }
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 1000px;
+  background: rgba(0,0,0,0.5);
+  &:hover{
+      background: rgba(0,0,0,0.7);
+  }
 }
 .icon-btn{
-    color: $white;
-    font-size: 20px;
-    line-height: 1;
+  color: $white;
+  font-size: 20px;
+  line-height: 1;
 }
 
 .btn {
-    padding: 8px;    
-    border-radius: $border-radius-xs;
-    text-align: center;
-    font-weight: 700;
-    line-height: 22px;
+  padding: 8px;    
+  border-radius: $border-radius-xs;
+  text-align: center;
+  font-weight: 700;
+  line-height: 22px;
 }
 
 .btn-outline {
-    padding: 8px;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: $border-radius-xs;
-    text-align: center;
-    line-height: 20px;
+  padding: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: $border-radius-xs;
+  text-align: center;
+  line-height: 20px;
 }
 
 .btn-primary {
-    color: $white;
-    background: $primary;
-    &:active{
-        background: $primary-700;
-    }
+  color: $white;
+  background: $primary;
+  &:hover,&:active, &:focus ,&:focus-visible {
+    color: $white !important;
+    background: $primary-700;
+    border-color: $primary-700;
+  }
 }
 
 .btn-outline-primary {
-    color: $primary;
-    background: $white;
-    border-color: $primary;
+  color: $primary;
+  background: $white;
+  border-color: $primary;
 }
 
 .btn-secondary {
-    color: $white;
+  color: $white;
+  background: $secondary-600;
+  &:hover,&:active, &:focus ,&:focus-visible {
+    color: $white !important;
     background: $secondary-600;
-    &:hover.btn , &:focus.btn , &:focus-visible.btn , &:focus-visible.btn {
-        color: $white;
-        background: $secondary-600;
-    }
+    border-color: $secondary-600;
+  }
 }
 
 .btn-outline-secondary {
-    color: $secondary-600;
-    background: $white;
-    border-color: $secondary-600;
+  color: $secondary-600;
+  background: $white;
+  border-color: $secondary-600;
 }
 
 .btn-tertiary {
-    color: $white;
-    background: $tertiary;
-    &:active{
-        background: $tertiary-600;
-    }
+  color: $white;
+  background: $tertiary;
+  &:hover,&:active, &:focus ,&:focus-visible {
+    color: $white !important;
+    background: $tertiary-600;
+    border-color: $tertiary-600;
+  }
 }
 
 .btn-compl {
-    color: $white;
-    background: $complementary-400;
+  color: $white;
+  background: $complementary-400;
 }
 
 .btn-gray {
-    color: $white;
-    background: $gray-300;
+  color: $white;
+  background: $gray-300;
 }
 
 .btn-white {
-    color: $gray-300;
-    background: $white;
+  color: $gray-300;
+  background: $white;
+}
+
+.btn-primary-light {
+  color: $neutral-500;
+  background: $primary-200;
+  border-color: $primary-200;
+  &:hover,&:active, &:focus ,&:focus-visible {
+    color: $white !important;
+    background: $primary;
+    border-color: $primary;
+  }
+}
+
+.btn-submit {
+  &:hover,&:active, &:focus ,&:focus-visible {
+    color: $primary !important;
+    background: $white !important;
+  }
 }

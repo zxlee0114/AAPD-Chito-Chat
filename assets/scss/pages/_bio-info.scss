@@ -1,0 +1,101 @@
+.header-bio-bg-top {
+  position: relative; //置入背景圖片的地方設為相對定位
+  background-image: url(/assets/images/white.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  &::before{
+      content:"";
+      background-image: url(/assets/images/index/noisy-gradients.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      position: absolute; //背景圖片設為絕對定位
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; //四個定位點均設 0，以完全覆蓋相對定位內容
+      opacity: 0.7; //對背景圖片的設定
+  }
+}
+
+.header-bg-bio {
+  background-color: $neutral-50;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 375px auto;
+  &::before{
+    content:"";
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), 
+    rgba(246, 246, 246, 1)),
+    url(/assets/images/noisy-gradients.png);
+    background-size: 375px 393px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; //四個定位點均設 0，以完全覆蓋相對定位內容
+    z-index: -1;
+    opacity: 0.7;
+  }
+}
+
+.bio-info-deco::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  background: $neutral-400;
+  right: 0;
+  top: 2px;
+}
+
+// 純 CSS 仿按鈕的 radio 與 checkbox
+// https://codepen.io/Jimmy_Wu/pen/vYyVyqa
+
+.level-radioBtn {
+  display: flex;
+  gap: 8px;
+  &-input[type="radio"] {
+    display: none;
+    + label {
+      cursor: pointer;
+    }
+    &:checked + label {
+      background-color: $tertiary;
+      color: #fff;
+    }
+  }
+}
+
+.role-radioBtn {
+  display: flex;
+  gap: 8px;
+  &-input[type="radio"] {
+    display: none;
+    + label {
+      cursor: pointer;
+    }
+    &:checked + label {
+      background-color: $primary;
+      color: #fff;
+    }
+  }
+}
+
+.MBTI-radioBtn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  &-input[type="radio"] {
+    display: none;
+    + label {
+      cursor: pointer;
+    }
+    &:checked + label {
+      background-color: $secondary;
+      color: #fff;
+    }
+  }
+}
