@@ -35,11 +35,13 @@
 }
 
 .btn-primary {
-    color: $white;
-    background: $primary;
-    &:active{
-        background: $primary-700;
-    }
+  color: $white;
+  background: $primary;
+  &:hover,&:active, &:focus ,&:focus-visible {
+    color: $white !important;
+    background: $primary-700;
+    border-color: $primary-700;
+  }
 }
 
 .btn-outline-primary {
@@ -49,31 +51,34 @@
 }
 
 .btn-secondary {
-    color: $white;
+  color: $white;
+  background: $secondary-600;
+  &:hover,&:active, &:focus ,&:focus-visible {
+    color: $white !important;
     background: $secondary-600;
-    &:hover.btn , &:focus.btn , &:focus-visible.btn , &:focus-visible.btn {
-        color: $white;
-        background: $secondary-600;
-    }
+    border-color: $secondary-600;
+  }
 }
 
 .btn-outline-secondary {
-    color: $secondary-600;
-    background: $white;
-    border-color: $secondary-600;
+  color: $secondary-600;
+  background: $white;
+  border-color: $secondary-600;
 }
 
 .btn-tertiary {
-    color: $white;
-    background: $tertiary;
-    &:active{
-        background: $tertiary-600;
-    }
+  color: $white;
+  background: $tertiary;
+  &:hover,&:active, &:focus ,&:focus-visible {
+    color: $white !important;
+    background: $tertiary-600;
+    border-color: $tertiary-600;
+  }
 }
 
 .btn-compl {
-    color: $white;
-    background: $complementary-400;
+  color: $white;
+  background: $complementary-400;
 }
 
 .btn-gray {
@@ -84,4 +89,15 @@
 .btn-white {
     color: $gray-300;
     background: $white;
+}
+
+.btn-primary-light {
+  color: $neutral-500;
+  background: $primary-200;
+  border-color: $primary-200;
+  &:hover,&:active, &:focus ,&:focus-visible {
+    color: $white !important;
+    background: $primary;
+    border-color: $primary;
+  }
 }
