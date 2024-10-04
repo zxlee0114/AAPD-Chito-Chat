@@ -24,13 +24,14 @@
 @import './venders/swiper';
 
 //layout
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import './layout/header';
+@import './layout/footer';
 @import './layout/header-tertiary';
 
 //pages
-@import './pages/index.scss';
-@import './pages/learning-main.scss';
+@import './pages/index';
+@import './pages/learning-main';
 @import './pages/friends';
 @import './pages/article';
 @import './pages/article-frog-tw';
+@import './pages/bio-info';
