@@ -8,198 +8,194 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-<body class="header-bg-learning" style="padding-top: 54px; padding-bottom: 75px;">
+<body class="header-bg-learning" style="padding-top: 54px; padding-bottom: 65px;">
   <%- include('./layout/header-learning'); -%>
 
   <div class="container pt-xs pb-s d-flex justify-content-between align-items-center">
-      <div style="width: 76px;"></div>
-      <h2 class="mb-0 fw-700">
-          學日文
-      </h2>
-      <span>
-          <img src="../assets/images/icon/bookmark.svg" alt="bookmark">
-          <img src="../assets/images/icon/search.svg" alt="search" class="ms-xl">
-      </span>
+    <div style="width: 76px;"></div>
+    <h2 class="mb-0 fw-700">學日文</h2>
+    <span>
+      <img src="../assets/images/icon/bookmark.svg" alt="bookmark">
+      <img src="../assets/images/icon/search.svg" alt="search" class="ms-xl">
+    </span>
   </div>
 
   <div class="container bg-gray-50">
-      <ul class="nav nav-tabs justify-content-center" id="learningTab" role="tablist">
-          <li class="nav-item w-50" role="presentation">
-            <button class="nav-link nav-learning active w-100 text-center fs-t3 fw-700 py-s ps-0 pe-xs d-flex flex-column align-items-center bg-gray-50" id="course-tab" data-bs-toggle="tab" data-bs-target="#course" type="button" role="tab" aria-controls="course" aria-selected="true">課程安排
-              <span class="active-deco w-100 mt-xxs"></span>
-            </button>
-          </li>
-          <li class="nav-item w-50" role="presentation">
-            <button class="nav-link nav-learning w-100 text-center fs-t3 fw-700 py-s ps-xs pe-0 d-flex flex-column align-items-center bg-gray-50" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">進度複習
-              <span class="active-deco w-100 mt-xxs"></span>
-            </button>
-          </li>
-        </ul>
+    <ul class="nav nav-tabs justify-content-center" id="learningTab" role="tablist">
+      <li class="nav-item w-50" role="presentation">
+        <button class="nav-link nav-learning active w-100 text-center fs-t3 fw-700 py-s ps-0 pe-xs d-flex flex-column align-items-center bg-gray-50" id="course-tab" data-bs-toggle="tab" data-bs-target="#course" type="button" role="tab" aria-controls="course" aria-selected="true">課程安排
+          <span class="active-deco w-100 mt-xxs"></span>
+        </button>
+      </li>
+      <li class="nav-item w-50" role="presentation">
+        <button class="nav-link nav-learning w-100 text-center fs-t3 fw-700 py-s ps-xs pe-0 d-flex flex-column align-items-center bg-gray-50" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">進度複習
+          <span class="active-deco w-100 mt-xxs"></span>
+        </button>
+      </li>
+    </ul>
 
-        <div class="tab-content" id="learningTabContent">
-          <div class="tab-pane fade show active" id="course" role="tabpanel" aria-labelledby="course-tab">
-            <!-- 課程安排 -->
-            <div class="py-m">
-              <div class="learning-card mb-m">
-                <h3 class="fs-h3 fw-700">我的進度</h3>
-                <div class="rounded-2 border border-gray-100 px-s py-m position-relative">
-                  <div class="d-flex justify-content-between align-items-end mb-s">
-                    <p class="fs-t4 mb-0">五十音・基本單字</p>
-                    <a href="#" class="fs-t6 d-flex align-items-center stretched-link">開始課程
-                      <span class="material-symbols-outlined fs-t7 ms-xxs">arrow_forward_ios</span>
-                    </a>
-                  </div>
-                  <div class="progress rounded-pill bg-gray-50 border border-gray-100" style="height: 10px;">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
+    <div class="tab-content" id="learningTabContent">
+      <div class="tab-pane fade show active" id="course" role="tabpanel" aria-labelledby="course-tab">
+        <!-- 課程安排 -->
+        <div class="py-m">
+          <div class="learning-card mb-m">
+            <h3 class="fs-h3 fw-700">我的進度</h3>
+            <div class="rounded-2 border border-gray-100 px-s py-m position-relative">
+              <div class="d-flex justify-content-between align-items-end mb-s">
+                <p class="fs-t4 mb-0">五十音・基本單字</p>
+                <a href="#" class="fs-t6 d-flex align-items-center stretched-link">開始課程
+                  <span class="material-symbols-outlined fs-t7 ms-xxs">arrow_forward_ios</span>
+                </a>
               </div>
-
-              <div class="learning-card mb-m">
-                <h3 class="fs-h3 fw-700">所有課程</h3>
-                <div class="swiper learningSwiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide w-auto" style="background-image: url(/assets/images/course_item-1.png); background-repeat: no-repeat;">
-                      <a href="#" class="d-flex justify-content-center align-items-center" style="width: 136px; height: 119px;">
-                        <p class="fs-t6 mb-0">五十音・基本單字</p>
-                      </a>
-                    </div>
-                    <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/course_item-2.png); background-repeat: no-repeat;">
-                      <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 119px;">
-                        <p class="fs-t6 mb-0">JLPT N5</p>
-                      </div>
-                    </a>
-                    <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/course_item-3.png); background-repeat: no-repeat;">
-                      <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 119px;">
-                        <p class="fs-t6 mb-0">JLPT N4</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="learning-card mb-m">
-                <h3 class="fs-h3 fw-700">生活用語</h3>
-                <div class="swiper learningSwiper">
-                  <div class="swiper-wrapper">
-                    <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-1.png); background-repeat: no-repeat;">
-                      <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
-                        <p class="fs-t6 mb-0">擬音語</p>
-                      </div>
-                    </a>
-                    <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-2.png); background-repeat: no-repeat;">
-                      <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
-                        <p class="fs-t6 mb-0">四字熟語</p>
-                      </div>
-                    </a>
-                    <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-3.png); background-repeat: no-repeat;">
-                      <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
-                        <p class="fs-t6 mb-0">地區方言</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="learning-card mb-m">
-                <h3 class="fs-h3 fw-700">主題式單字</h3>
-                <div class="swiper learningSwiper">
-                  <div class="swiper-wrapper">
-                    <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-4.png); background-repeat: no-repeat;">
-                      <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
-                        <p class="fs-t6 mb-0">區役所</p>
-                      </div>
-                    </a>
-                    <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-5.png); background-repeat: no-repeat;">
-                      <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
-                        <p class="fs-t6 mb-0">簽證</p>
-                      </div>
-                    </a>
-                    <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-6.png); background-repeat: no-repeat;">
-                      <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
-                        <p class="fs-t6 mb-0">銀行・郵局</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="learning-card">
-                <h3 class="fs-h3 fw-700">流行語</h3>
-                <div class="swiper learningSwiper">
-                  <div class="swiper-wrapper">
-                    <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-1.png); background-repeat: no-repeat;">
-                      <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
-                        <p class="fs-t6 mb-0">擬音語</p>
-                      </div>
-                    </a>
-                    <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-2.png); background-repeat: no-repeat;">
-                      <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
-                        <p class="fs-t6 mb-0">四字熟語</p>
-                      </div>
-                    </a>
-                    <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-3.png); background-repeat: no-repeat;">
-                      <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
-                        <p class="fs-t6 mb-0">地區方言</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
+              <div class="progress rounded-pill bg-gray-50 border border-gray-100" style="height: 10px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
 
-          <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
-            <!-- 進度複習 -->
-            <div class="py-m">
-              <div class="learning-card mb-m">
-                <h3 class="fs-h3 fw-700">課後複習</h3>
-                <div class="d-flex justify-content-between">
-                  <a href="#" class="rounded-2 border border-gray-100 d-flex flex-column justify-content-center align-items-center" style="width: 152px; height: 120px;">
-                    <img src="/assets/images/icon/sticky_note.svg" alt="">
-                    <p class="mt-xs mb-0">單字</p>
-                  </a>
-                  <a href="#" class="rounded-2 border border-gray-100 d-flex flex-column justify-content-center align-items-center" style="width: 152px; height: 120px;">
-                    <img src="/assets/images/icon/book_4.svg" alt="">
-                    <p class="mt-xs mb-0">文法</p>
+          <div class="learning-card mb-m">
+            <h3 class="fs-h3 fw-700">所有課程</h3>
+            <div class="swiper learningSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide w-auto" style="background-image: url(/assets/images/course_item-1.png); background-repeat: no-repeat;">
+                  <a href="#" class="d-flex justify-content-center align-items-center" style="width: 136px; height: 119px;">
+                    <p class="fs-t6 mb-0">五十音・基本單字</p>
                   </a>
                 </div>
+                <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/course_item-2.png); background-repeat: no-repeat;">
+                  <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 119px;">
+                    <p class="fs-t6 mb-0">JLPT N5</p>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/course_item-3.png); background-repeat: no-repeat;">
+                  <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 119px;">
+                    <p class="fs-t6 mb-0">JLPT N4</p>
+                  </div>
+                </a>
               </div>
+            </div>
+          </div>
 
-              <div class="learning-card">
-                <h3 class="fs-h3 fw-700">能力檢測</h3>
-
-                <a href="#" class="JLPT-test rounded-2 border border-gray-100 text-center px-m py-xl d-flex align-items-center mb-s">
-                  <p class="fs-t3 fw-700 mb-0">JLPT N5</p>
-                  <p class="fs-t7 ms-s mb-0">86分 / 100分</p>
+          <div class="learning-card mb-m">
+            <h3 class="fs-h3 fw-700">生活用語</h3>
+            <div class="swiper learningSwiper">
+              <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-1.png); background-repeat: no-repeat;">
+                  <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
+                    <p class="fs-t6 mb-0">擬音語</p>
+                  </div>
                 </a>
-
-                <a href="#" class="JLPT-test rounded-2 border border-gray-100 text-center px-m py-xl d-flex align-items-center mb-s">
-                  <p class="fs-t3 fw-700 mb-0">JLPT N4</p>
-                  <p class="fs-t7 ms-s mb-0">0分 / 100分</p>
+                <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-2.png); background-repeat: no-repeat;">
+                  <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
+                    <p class="fs-t6 mb-0">四字熟語</p>
+                  </div>
                 </a>
-
-                <a href="#" class="JLPT-test rounded-2 border border-gray-100 text-center px-m py-xl d-flex align-items-center mb-s">
-                  <p class="fs-t3 fw-700 mb-0">JLPT N3</p>
-                  <p class="fs-t7 ms-s mb-0">0分 / 100分</p>
+                <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-3.png); background-repeat: no-repeat;">
+                  <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
+                    <p class="fs-t6 mb-0">地區方言</p>
+                  </div>
                 </a>
+              </div>
+            </div>
+          </div>
 
-                <a href="#" class="JLPT-test rounded-2 border border-gray-100 text-center px-m py-xl d-flex align-items-center mb-s">
-                  <p class="fs-t3 fw-700 mb-0">JLPT N2</p>
-                  <p class="fs-t7 ms-s mb-0">0分 / 100分</p>
+          <div class="learning-card mb-m">
+            <h3 class="fs-h3 fw-700">主題式單字</h3>
+            <div class="swiper learningSwiper">
+              <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-4.png); background-repeat: no-repeat;">
+                  <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
+                    <p class="fs-t6 mb-0">區役所</p>
+                  </div>
                 </a>
-
-                <a href="#" class="JLPT-test rounded-2 border border-gray-100 text-center px-m py-xl d-flex align-items-center">
-                  <p class="fs-t3 fw-700 mb-0">JLPT N1</p>
-                  <p class="fs-t7 ms-s mb-0">0分 / 100分</p>
+                <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-5.png); background-repeat: no-repeat;">
+                  <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
+                    <p class="fs-t6 mb-0">簽證</p>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-6.png); background-repeat: no-repeat;">
+                  <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
+                    <p class="fs-t6 mb-0">銀行・郵局</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="learning-card">
+            <h3 class="fs-h3 fw-700">流行語</h3>
+            <div class="swiper learningSwiper">
+              <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-1.png); background-repeat: no-repeat;">
+                  <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
+                    <p class="fs-t6 mb-0">擬音語</p>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-2.png); background-repeat: no-repeat;">
+                  <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
+                    <p class="fs-t6 mb-0">四字熟語</p>
+                  </div>
+                </a>
+                <a href="#" class="swiper-slide w-auto" style="background-image: url(/assets/images/learning-card-bg-3.png); background-repeat: no-repeat;">
+                  <div class="d-flex justify-content-center align-items-center" style="width: 136px; height: 68px;">
+                    <p class="fs-t6 mb-0">地區方言</p>
+                  </div>
                 </a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+        <!-- 進度複習 -->
+        <div class="py-m">
+          <div class="learning-card mb-m">
+            <h3 class="fs-h3 fw-700">課後複習</h3>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="rounded-2 border border-gray-100 d-flex flex-column justify-content-center align-items-center" style="width: 152px; height: 120px;">
+                <img src="/assets/images/icon/sticky_note.svg" alt="">
+                <p class="mt-xs mb-0">單字</p>
+              </a>
+              <a href="#" class="rounded-2 border border-gray-100 d-flex flex-column justify-content-center align-items-center" style="width: 152px; height: 120px;">
+                <img src="/assets/images/icon/book_4.svg" alt="">
+                <p class="mt-xs mb-0">文法</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="learning-card">
+            <h3 class="fs-h3 fw-700">能力檢測</h3>
+
+            <a href="#" class="JLPT-test rounded-2 border border-gray-100 text-center px-m py-xl d-flex align-items-center mb-s">
+              <p class="fs-t3 fw-700 mb-0">JLPT N5</p>
+              <p class="fs-t7 ms-s mb-0">86分 / 100分</p>
+            </a>
+
+            <a href="#" class="JLPT-test rounded-2 border border-gray-100 text-center px-m py-xl d-flex align-items-center mb-s">
+              <p class="fs-t3 fw-700 mb-0">JLPT N4</p>
+              <p class="fs-t7 ms-s mb-0">0分 / 100分</p>
+            </a>
+
+            <a href="#" class="JLPT-test rounded-2 border border-gray-100 text-center px-m py-xl d-flex align-items-center mb-s">
+              <p class="fs-t3 fw-700 mb-0">JLPT N3</p>
+              <p class="fs-t7 ms-s mb-0">0分 / 100分</p>
+            </a>
+
+            <a href="#" class="JLPT-test rounded-2 border border-gray-100 text-center px-m py-xl d-flex align-items-center mb-s">
+              <p class="fs-t3 fw-700 mb-0">JLPT N2</p>
+              <p class="fs-t7 ms-s mb-0">0分 / 100分</p>
+            </a>
+
+            <a href="#" class="JLPT-test rounded-2 border border-gray-100 text-center px-m py-xl d-flex align-items-center">
+              <p class="fs-t3 fw-700 mb-0">JLPT N1</p>
+              <p class="fs-t7 ms-s mb-0">0分 / 100分</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-
 
   <%- include('./layout/footer', {page: "learning"}); -%>
   <script type="module" src="../main.js"></script>
