@@ -50,3 +50,52 @@
   right: 0;
   top: 2px;
 }
+
+// 純 CSS 仿按鈕的 radio 與 checkbox
+// https://codepen.io/Jimmy_Wu/pen/vYyVyqa
+
+.level-radioBtn {
+  display: flex;
+  gap: 8px;
+  &-input[type="radio"] {
+    display: none;
+    + label {
+      cursor: pointer;
+    }
+    &:checked + label {
+      background-color: $tertiary;
+      color: #fff;
+    }
+  }
+}
+
+.role-radioBtn {
+  display: flex;
+  gap: 8px;
+  &-input[type="radio"] {
+    display: none;
+    + label {
+      cursor: pointer;
+    }
+    &:checked + label {
+      background-color: $primary;
+      color: #fff;
+    }
+  }
+}
+
+.MBTI-radioBtn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  &-input[type="radio"] {
+    display: none;
+    + label {
+      cursor: pointer;
+    }
+    &:checked + label {
+      background-color: $secondary;
+      color: #fff;
+    }
+  }
+}
