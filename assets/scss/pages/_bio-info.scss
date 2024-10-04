@@ -1,5 +1,18 @@
 .header-bio-bg-top {
-  background-image:  url(/assets/images/index/noisy-gradients.png);
+  position: relative; //置入背景圖片的地方設為相對定位
+  background-image: url(/assets/images/white.png);
   background-repeat: no-repeat;
   background-position: top center;
+  &::before{
+      content:"";
+      background-image: url(/assets/images/index/noisy-gradients.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      position: absolute; //背景圖片設為絕對定位
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; //四個定位點均設 0，以完全覆蓋相對定位內容
+      opacity: 0.7; //對背景圖片的設定
+  }
 }
